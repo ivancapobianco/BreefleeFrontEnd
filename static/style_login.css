@@ -10,30 +10,39 @@
   }
 
  body{
-    display: grid;
-    height: 50vh;
+    display: block;
+    height: 100vh;
     place-items:center;
-    background: radial-gradient( #ffa500, #F4882E);
+    background: radial-gradient(#ffa500, #F4882E);
     background-repeat: cover;
   }
 
   html {
     color: #F4882E;
   }
-  .main_div{
 
+  .content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: transparent;
     width: 600px;
-    background:rgba(255, 255, 255, 0.75);
+  }
+
+  .main_div{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
     padding: 30px;
-    border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-    border: 1px solid lightgrey;
+    border: 0px solid lightgrey;
     border-radius: 40px;
   }
 
   form {
-    position: relative;
-    margin-top: -10px;
+    /*position: relative;*/
+    margin-top: 0px;
   }
 
   form .input_box{
@@ -62,6 +71,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   .option_div .check_box{
     display: flex;
     align-items: center;
@@ -93,9 +103,10 @@
     text-decoration: underline;
   }
   
-  .logo { 
-    height: 400px;
-    width: 400px;
+  .logo {
+   margin: auto;
+    #height: 400px;
+    width: 100%;
   }
 
 img {
@@ -104,7 +115,8 @@ img {
 }
 
 .logo img{
-  position:relative;
-  top:300px;
-  border:0px;
+    padding: 20px;
+  /*position:relative;
+  top:00px;
+  border:0px;*/
   }
