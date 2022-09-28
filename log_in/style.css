@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+
+  head {
+  position: center;
+  }
+
+ body{
+    display: grid;
+    height: 50vh;
+    place-items:center;
+    background: radial-gradient( #ffa500, #F4882E);
+    background-repeat: cover;
+  }
+
+  html {
+    color: #F4882E;
+  }
+  .main_div{
+
+    width: 600px;
+    background:rgba(255, 255, 255, 0.75);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+  }
+
+  form {
+    position: relative;
+    margin-top: -10px;
+  }
+
+  form .input_box{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .input_box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .input_box input:focus{
+  border-color: #ffa500;
+  }
+
+  form .option_div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .option_div .check_box{
+    display: flex;
+    align-items: center;
+  }
+  .option_div span{
+    margin-left: 5px;
+    font-size: 15px;
+    color: #333;
+  }
+
+  .button input{
+    padding-left: 0;
+    background: #F4882E;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .button input:hover{
+    background: #ffa500;
+  }
+  
+  form a{
+    text-decoration: none;
+  }
+  form a:hover{
+    text-decoration: underline;
+  }
+  
+  .logo { 
+    height: 400px;
+    width: 400px;
+  }
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.logo img{
+  position:relative;
+  top:300px;
+  border:0px;
+  }
