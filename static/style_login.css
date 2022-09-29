@@ -5,6 +5,37 @@
     font-family: 'Poppins',sans-serif;
   }
 
+
+:root
+{
+    /*colors*/
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+    --orange: #F4882E;
+
+    /*Breeflee Palette*/
+    --breeflee_peach_orange: rgba(255, 163, 104, 1);
+    --breeflee_yellow: rgba(255, 185, 72, 1);
+    --breeflee_rosa: rgba(254, 109, 115, 1);
+    --breeflee_blue_green: rgba(34, 124, 157, 1);
+    --breeflee_green: rgba(116, 199, 171, 1);
+
+    --grey_black: #191F28;
+    --grey_dark: #4A4A4A;
+    --grey_medium_dark: #B6B6B7;
+    --grey_medium_light: #D8D8D8;
+    --grey_light: #F0F0F0;
+    --grey_ultra_light: #F8F9FA;
+
+    /*Input box*/
+    --input_border_rad: 20px;
+}
+
+
+
   head {
   position: center;
   }
@@ -13,7 +44,8 @@
     display: block;
     height: 100vh;
     place-items:center;
-    background: radial-gradient(#ffa500, #F4882E);
+    #background: var(--breeflee_peach_orange);
+    background: radial-gradient(var(--breeflee_peach_orange), #F4882E);
     background-repeat: cover;
   }
 
@@ -33,10 +65,11 @@
 
   .main_div{
     width: 100%;
+    #background: transparent;
     background: rgba(255, 255, 255, 0.75);
     padding: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-    border: 0px solid lightgrey;
+    0border: 4px solid var(--white);
     border-radius: 40px;
   }
 
@@ -51,24 +84,25 @@
     width: 100%;
     position: relative;
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.94);
-    border-radius: 20px;
-    border: 1px solid lightgrey;
+    background: var(--white);
+    border-radius: var(--input_border_rad);
+    border: 0px solid var(--grey_medium_light);
   }
 
   .input_box input{
     height: 100%;
     width: 100%;
     outline: none;
-    border-radius: 20px;
+    border-radius: var(--input_border_rad);
     #text-align: center;
     font-size: 17px;
     transition: all 0.3s ease;
+    color: var(--grey_dark);
     border: none;
   }
 
-  form .input_box input:focus{
-  border-color: #ffa500;
+  form .input_box:focus-within{
+  border: 3px solid var(--breeflee_peach_orange);
   }
 
 
@@ -100,7 +134,7 @@
 
   .button input{
     padding-left: 0;
-    background: #F4882E;
+    background: var(--breeflee_green);
     color: #fff;
     border: none;
     font-size: 20px;
@@ -108,7 +142,7 @@
     cursor: pointer;
   }
   .button input:hover{
-    background: #ffa500;
+    background: var(--breeflee_blue_green);
   }
   
   form a{
