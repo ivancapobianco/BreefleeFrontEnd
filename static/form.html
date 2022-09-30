@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_form.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <!-- main wrapper -->
+    <div class="formbreeflee-main-wrapper">
+
+        <!-- form wrapper -->
+        <div class="formbreeflee-form-wrapper">
+
+            <form action="" method="POST">
+
+                <!--double in a line | text-->
+                <div class="flex formbreeflee-half-line-padding">
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="fName" class="formbreeflee-form-label"> First Name </label>
+                        <input type="text" name="fName" id="fName" placeholder="First Name" class="formbreeflee-form-input" />
+                    </div>
+
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="lName" class="formbreeflee-form-label"> Last Name </label>
+                        <input type="text" name="lName" id="lName" placeholder="Last Name" class="formbreeflee-form-input" />
+                    </div>
+                </div>
+
+                <!--single line | number-->
+                <div>
+                    <label for="guest" class="formbreeflee-form-label">How many guest are you bringing?</label>
+                    <input type="number" name="guest" id="guest" placeholder="5" class="formbreeflee-form-input" />
+                </div>
+
+                <!--single line | textarea-->
+                <div>
+                    <label for="textarea" class="formbreeflee-form-label">Textarea</label>
+                    <textarea type="textarea" name="textarea" id="textarea" placeholder="text" rows="5" class="formbreeflee-form-input">asda</textarea>
+                </div>
+
+                <!--double in a line | date & time-->
+                <div class="flex flex-wrap formbreeflee-half-line-padding">
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="date" class="formbreeflee-form-label"> Date </label>
+                        <input type="date" name="date" id="date" class="formbreeflee-form-input" />
+                    </div>
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="time" class="formbreeflee-form-label"> Time </label>
+                        <input type="time" name="time" id="time" class="formbreeflee-form-input" />
+                    </div>
+                </div>
+
+                <!--three in a line | text-->
+                <div class="flex formbreeflee-half-line-padding">
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="fName" class="formbreeflee-form-label"> One </label>
+                        <input type="text" name="fName" id="fName" placeholder="First Name" class="formbreeflee-form-input" />
+                    </div>
+
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="fName" class="formbreeflee-form-label"> Two (Dropdown) </label>
+                        <select class="formbreeflee-form-input">
+                        <option>one</option>
+                        <option>two</option>
+                        <option>three</option>
+                    </select>
+                    </div>
+
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="lName" class="formbreeflee-form-label"> Three </label>
+                        <input type="text" name="lName" id="lName" placeholder="Last Name" class="formbreeflee-form-input" />
+                    </div>
+                </div>
+
+                <!-- Radio Button-->
+                <div>
+                    <label for="fName" class="formbreeflee-form-label"> Button choice </label>
+                    <div class="flex">
+                      <input type="radio" name="radio1" id="radioButton1" class="formbreeflee-radio" />
+                      <label for="radioButton1" class="formbreeflee-radio-label"> Yes </label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="radio1" id="radioButton2" class="formbreeflee-radio" />
+                      <label for="radioButton2" class="formbreeflee-radio-label"> No </label>
+                    </div>
+
+                </div>
+
+                <!-- Dropdown -->
+                <div>
+                    <label for="fName" class="formbreeflee-form-label"> Dropdown </label>
+                    <select class="formbreeflee-form-input">
+                        <option>one</option>
+                        <option>two</option>
+                        <option>three</option>
+                    </select>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    <meta charset="UTF-8">
+    <title>Title</title>
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style_form.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!--Menu-->
+        <aside class = "navigation">
+             <ul>
+
+                 <!--Logo-->
+                 <li>
+                    <a href="#">
+                        <div class="logo">
+                            <img src="B3 peach_transp.png">
+                            <!--img src="B.png"-->
+                        </div>
+                    </a>
+                 </li>
+
+                 <!--Menu items-->
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Account</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Nachricht</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Statistik</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Einstellungen</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="calendar-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Kalender</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Ausloggen</span>
+                    </a>
+                 </li>
+
+             </ul>
+        </aside>
+
+
+        <!--Topbar-->
+        <div class="topbar">
+            <!--menu toggle-->
+            <div class="toggle" style="visibility:hidden">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline" style="cursor: pointer"></ion-icon>
+                </label>
+            </div>
+
+            <!-- userImg -->
+            <div class="user">
+              <img src="Bild.png">
+            </div>
+        </div>
+
+
+        <!--Main-->
+        <div class="main">
+
+            <!--Left column-->
+            <div>
+                <div class="patient">
+
+                    <h1>Mustermann, Max <br> 51 J. (BMI XY)</h1>
+                    <br>
+                    <img class="patientbild" src="Bild.png">
+
+                    <div class="input_box button">
+                        <input type="stammdaten" value="STAMMDATEN">
+                    </div>
+
+                </div>
+                <hr/>
+
+                <div class="vtl">
+                    <div class="event">
+                        <p class="date">12 Mar 2237</p>
+                        <p class="txt">Nachsorge</p>
+                    </div>
+                    <div class="event">
+                        <p class="date">10 Mar 2236</p>
+                        <p class="txt">Nachsorge.</p>
+                    </div>
+                    <div class="event">
+                        <p class="date">10 Feb 2235</p>
+                        <p class="txt">OP</p>
+                    </div>
+                    <div class="event">
+                        <p class="date">10 Jan 2235</p>
+                        <p class="txt">OP Vorbereitung </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--Central column-->
+            <div>
+
+                <!--Content Navigation-->
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#"><span>ÜBERSICHT</span></a></li>
+                        <li><a href="#"><span>ANAMNESE</span></a></li>
+                        <li><a href="#"><span>ERNÄHRUNGS BERATUNG</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub-menu 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>LABOR</span></a></li>
+                        <li><a href="#"><span>NACHSORGE<br>BRIEF</span></a></li>
+                    </ul>
+                </nav>
+
+                <!-- Content Übersicht -->
+                <div class="content">
+                    <div class="formbreeflee-main-wrapper">
+
+        <!-- form wrapper -->
+        <div class="formbreeflee-form-wrapper">
+
+            <form action="" method="POST">
+
+                <!--double in a line | text-->
+                <div class="flex formbreeflee-half-line-padding">
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="fName" class="formbreeflee-form-label"> First Name </label>
+                        <input type="text" name="fName" id="fName" placeholder="First Name" class="formbreeflee-form-input" />
+                    </div>
+
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="lName" class="formbreeflee-form-label"> Last Name </label>
+                        <input type="text" name="lName" id="lName" placeholder="Last Name" class="formbreeflee-form-input" />
+                    </div>
+                </div>
+
+                <!--single line | number-->
+                <div>
+                    <label for="guest" class="formbreeflee-form-label">How many guest are you bringing?</label>
+                    <input type="number" name="guest" id="guest" placeholder="5" class="formbreeflee-form-input" />
+                </div>
+
+                <!--single line | textarea-->
+                <div>
+                    <label for="textarea" class="formbreeflee-form-label">Textarea</label>
+                    <textarea type="textarea" name="textarea" id="textarea" placeholder="text" rows="5" class="formbreeflee-form-input">asda</textarea>
+                </div>
+
+                <!--double in a line | date & time-->
+                <div class="flex flex-wrap formbreeflee-half-line-padding">
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="date" class="formbreeflee-form-label"> Date </label>
+                        <input type="date" name="date" id="date" class="formbreeflee-form-input" />
+                    </div>
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="time" class="formbreeflee-form-label"> Time </label>
+                        <input type="time" name="time" id="time" class="formbreeflee-form-input" />
+                    </div>
+                </div>
+
+                <!--three in a line | text-->
+                <div class="flex formbreeflee-half-line-padding">
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="fName" class="formbreeflee-form-label"> One </label>
+                        <input type="text" name="fName" id="fName" placeholder="First Name" class="formbreeflee-form-input" />
+                    </div>
+
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="fName" class="formbreeflee-form-label"> Two (Dropdown) </label>
+                        <select class="formbreeflee-form-input">
+                        <option>one</option>
+                        <option>two</option>
+                        <option>three</option>
+                    </select>
+                    </div>
+
+                    <div class="w-full sm:w-half formbreeflee-px-3">
+                        <label for="lName" class="formbreeflee-form-label"> Three </label>
+                        <input type="text" name="lName" id="lName" placeholder="Last Name" class="formbreeflee-form-input" />
+                    </div>
+                </div>
+
+                <!-- Radio Button-->
+                <div>
+                    <label for="fName" class="formbreeflee-form-label"> Button choice </label>
+                    <div class="flex">
+                      <input type="radio" name="radio1" id="radioButton1" class="formbreeflee-radio" />
+                      <label for="radioButton1" class="formbreeflee-radio-label"> Yes </label>
+                    </div>
+                    <div class="flex">
+                      <input type="radio" name="radio1" id="radioButton2" class="formbreeflee-radio" />
+                      <label for="radioButton2" class="formbreeflee-radio-label"> No </label>
+                    </div>
+
+                </div>
+
+                <!-- Dropdown -->
+                <div>
+                    <label for="fName" class="formbreeflee-form-label"> Dropdown </label>
+                    <select class="formbreeflee-form-input">
+                        <option>one</option>
+                        <option>two</option>
+                        <option>three</option>
+                    </select>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+                </div>
+
+            </div>
+
+
+            <!--Right column-->
+            <div>
+                <div class="toggle_todo_visible"><img src="icons/arrow right.png"></div>
+                <div class="todo_text">to do</div>
+                <div>
+                    to do
+                </div>
+                <section class="tasks">
+
+                    <header class="tasks-header">
+                        <h2 class="tasks-title">Tasks</h2>
+                    </header>
+
+                    <fieldset class="tasks-list">
+                        <label class="tasks-list-item">
+                            <input type="checkbox" name="task_1" value="1" class="tasks-list-cb" checked>
+                            <span class="tasks-list-mark"></span>
+                            <span class="tasks-list-desc">Check This</span>
+                        </label>
+                        <label class="tasks-list-item">
+                            <input type="checkbox" name="task_2" value="1" class="tasks-list-cb" checked>
+                            <span class="tasks-list-mark"></span>
+                            <span class="tasks-list-desc">Then This</span>
+                        </label>
+                        <label class="tasks-list-item">
+                            <input type="checkbox" name="task_3" value="1" class="tasks-list-cb">
+                            <span class="tasks-list-mark"></span>
+                            <span class="tasks-list-desc">And Go!</span>
+                        </label>
+                    </fieldset>
+
+                </section>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+<!--script-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        // MenuToggle
+        //let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let topbar = document.querySelector('.topbar');
+        let main = document.querySelector('.main');
+
+        // toggle.onclick
+        navigation.onmouseenter = function(){
+            navigation.classList.toggle('active');
+            topbar.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        navigation.onmouseleave = function(){
+            navigation.classList.remove('active');
+            topbar.classList.remove('active');
+            main.classList.remove('active');
+        }
+
+
+
+        // Toggle_Todo
+        let toggle_todo_visible = document.querySelector('.toggle_todo_visible');
+        let main_todo = document.querySelector('.main');
+        let todo_text = document.querySelector('.todo_text');
+
+        toggle_todo_visible.onclick = function(){
+            main_todo.classList.toggle('active_todo');
+            todo_text.classList.toggle('active_todo');
+            toggle_todo_visible.classList.toggle('active_todo');
+        }
+
+
+
+
+
+        // add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li.');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover', activeLink));
+    </script>
+
+</body>
+</html>
