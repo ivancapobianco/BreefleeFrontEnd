@@ -1,0 +1,35 @@
+:root
+{
+    /*colors*/
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+    --orange: #F4882E;
+
+    /*Breeflee Palette*/
+    --breeflee_peach_orange: rgba(255, 163, 104, 1);
+    --breeflee_yellow: rgba(255, 185, 72, 1);
+    --breeflee_rosa: rgba(254, 109, 115, 1);
+    --breeflee_blue_green: rgba(34, 124, 157, 1);
+    --breeflee_green: rgba(116, 199, 171, 1);
+
+    --grey_black: #191F28;
+    --grey_dark: #4A4A4A;
+    --grey_medium_dark: #B6B6B7;
+    --grey_medium_light: #D8D8D8;
+    --grey_light: #F0F0F0;
+    --grey_ultra_light: #F8F9FA;
+
+
+    /*measures and transition*/
+    --transition05s: 0.5s;
+    --transition0s: 0s;
+    --topbar_height: 60px;
+    --menu_opened: 200px;
+    --menu_closed: 80px;
+    --patient_first_col: 25vh;
+    --patient_todo_col: 25vh;
+    --padding_half_line: 12px; /*for forms*/
+}
