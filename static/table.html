@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 
@@ -114,7 +115,9 @@
                 <table>
 
                     <thead>
-                      <tr>
+
+                    <!--table head-->
+                        <tr>
                           <th> Datum Termin</th>
                           <th> Nachname, Name </th>
                           <th> Geb. Datum</th>
@@ -123,30 +126,52 @@
                           <th> Grund Termin</th>
                           <th> Geschlecht</th>
                           <th> Geschlecht</th>
-                      </tr>
+
+                        </tr>
+
                     </thead>
 
+                    <!--table body-->
                     <tbody>
-                      <tr>
-                        <th> Width </th>
+
+                      <tr data-href="#">
+                        <td> 01.01.1990 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 24 </td>
+                        <td> M </td>
                         <td> 80 cm </td>
                         <td> 60 cm </td>
                         <td> 220 cm </td>
+
                       </tr>
-                      <tr>
-                        <th> Depth </th>
+
+                      <tr data-href="#">
+                        <td> 12.12.2003 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 35 </td>
+                        <td> F </td>
                         <td> 70 cm </td>
                         <td> 65 cm </td>
                         <td> 80 cm </td>
                       </tr>
-                      <tr>
-                        <th> Weight </th>
+                      <tr data-href="#">
+                        <td> 13.04.1996 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 43 </td>
+                        <td> F </td>
                         <td> 16 kg </td>
                         <td> 22 kg </td>
                         <td> 31 kg </td>
                       </tr>
-                      <tr>
-                        <th> Height </th>
+                      <tr data-href="#">
+                        <td> 24.08.1994 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 45 </td>
+                        <td> F </td>
                         <td> 120 cm </td>
                         <td> 92 cm </td>
                         <td> 80 cm </td>
@@ -217,6 +242,14 @@
         }
         list.forEach((item) =>
         item.addEventListener('mouseover', activeLink));
+    </script>
+    <script>
+        //link rows of a table
+        $(document).ready(function () {
+            $(document.body).on("click", "tr[data-href]", function () {
+                window.location.href = this.dataset.href;
+            });
+        });
     </script>
 
 </body>

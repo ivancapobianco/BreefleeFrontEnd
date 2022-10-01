@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    <meta charset="UTF-8">
+    <title>Title</title>
+    -->
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style_popup.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!--Menu-->
+        <aside class = "navigation">
+             <ul>
+
+                 <!--Logo-->
+                 <li>
+                    <a href="#">
+                        <div class="logo">
+                            <img src="B3 peach_transp.png">
+                            <!--img src="B.png"-->
+                        </div>
+                    </a>
+                 </li>
+
+                 <!--Menu items-->
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Account</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Nachricht</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Statistik</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Einstellungen</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="calendar-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Kalender</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Ausloggen</span>
+                    </a>
+                 </li>
+
+             </ul>
+        </aside>
+
+
+        <!--Topbar-->
+        <div class="topbar">
+            <!--menu toggle-->
+            <div class="toggle" style="visibility:hidden">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+
+            <!-- userImg -->
+            <div class="user">
+
+              <img src="Bild.png">
+            </div>
+        </div>
+
+
+        <!--Main-->
+        <div class="hometable">
+
+            <!--Table-->
+            <div>
+                        <div class="popup" onclick="myFunction()">Click me!
+                    <span class="popuptext" id="myPopup">
+                        <div class="container-fluid mt-100">
+           
+     
+                            <div class="row d-flex justify-content-center">
+                     
+                               <div class="col-md-4">
+                                   
+                               
+                            <div class="card">
+                         <article class="filter-group">
+                             <header class="card-header">
+                                 <a href="#" data-toggle="collapse" data-target="#collapse_aside1" data-abc="true" aria-expanded="false" class="collapsed">
+                                     <i class="icon-control fa fa-chevron-down"></i>
+                                     <h class="title">Kategorien </h>
+                                 </a>
+                             </header>
+                             <div class="filter-content collapse" id="collapse_aside1" style="">
+                                 <div class="card-body">
+                                    
+                                     <ul class="list-menu">
+                                         <li><a href="#" data-abc="true">Patient </a></li>
+                                         <li><a href="#" data-abc="true">Diagnose  </a></li>
+                                         <li><a href="#" data-abc="true">Liste </a></li>
+                                         <li><a href="#" data-abc="true">Sonstiges </a></li>
+                                         <li><a href="#" data-abc="true">Krankheit </a></li>
+                                     </ul>
+                     
+                                 </div> 
+                             </div>
+                         </article> 
+                         <article class="filter-group">
+                             <header class="card-header">
+                                 <a href="#" data-toggle="collapse" data-target="#collapse_aside2" data-abc="true" aria-expanded="false" class="collapsed">
+                                     <i class="icon-control fa fa-chevron-down"></i>
+                                     <h class="title">Anzahl</h>
+                                 </a>
+                             </header>
+                             <div class="filter-content collapse" id="collapse_aside2" style="">
+                                 <div class="card-body">
+                                     <input type="range" class="custom-range" min="0" max="100" name="">
+                                     <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Von</label>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" type="number">
+                                          </div>
+                                          <div class="form-group text-right col-md-6">
+                                            <label>Bis</label>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" type="number">
+                                          </div>
+                                          </div>  
+                                          <a href="#" class="highlight-button btn btn-medium button xs-margin-bottom-five" data-abc="true">Bestätigen</a>
+                                    </div>
+                             </div>
+                         </article>  
+                         <article class="filter-group">
+                             <header class="card-header">
+                                 <a href="#" data-toggle="collapse" data-target="#collapse_aside3" data-abc="true" aria-expanded="false" class="collapsed">
+                                     <i class="icon-control fa fa-chevron-down"></i>
+                                     <h class="title">Auswahl </h>
+                                 </a>
+                             </header>
+                             <div class="filter-content collapse" id="collapse_aside3" style="">
+                                 <div class="card-body">
+                                       <label class="checkbox-btn">
+                                         <input type="checkbox">
+                                         <span class="btn btn-light"> 1 </span>
+                                       </label>
+                     
+                                       <label class="checkbox-btn">
+                                         <input type="checkbox">
+                                         <span class="btn btn-light"> 2 </span>
+                                       </label>
+                     
+                                       <label class="checkbox-btn">
+                                         <input type="checkbox">
+                                         <span class="btn btn-light"> 3 </span>
+                                       </label>
+                     
+                                       <label class="checkbox-btn">
+                                         <input type="checkbox">
+                                         <span class="btn btn-light"> 4 </span>
+                                       </label>
+                                       <label class="checkbox-btn">
+                                         <input type="checkbox">
+                                         <span class="btn btn-light"> 5 </span>
+                                       </label>
+                                 </div>  
+                             </div>
+                         </article>  
+                         <article class="filter-group">
+                             <header class="card-header">
+                                 <a href="#" data-toggle="collapse" data-target="#collapse_aside4" data-abc="true" class="collapsed" aria-expanded="false">
+                                     <i class="icon-control fa fa-chevron-down"></i>
+                                     <h class="title">Auswahl </h>
+                                 </a>
+                             </header>
+                             <div class="filter-content collapse" id="collapse_aside4" style="">
+                                 <div class="card-body">
+                                   <label class="custom-control">
+                                   <input type="checkbox" checked="" class="custom-control-input">
+                                   <div class="custom-control-label">Diagnose 1</div>
+                                 </label>
+                     
+                                 <label class="custom-control">
+                                   <input type="checkbox" checked="" class="custom-control-input">
+                                   <div class="custom-control-label">Diagnose 2</div>
+                                 </label>
+                     
+                                 <label class="custom-control">
+                                   <input type="checkbox" checked="" class="custom-control-input">
+                                   <div class="custom-control-label">Diagnose 3</div>
+                                 </label>
+                     
+                                 <label class="custom-control">
+                                   <input type="checkbox" checked="" class="custom-control-input">
+                                   <div class="custom-control-label">Diagnose 4</div>
+                                 </label>
+                                 </div>   
+                             </div>
+                         </article>  
+                     </div>
+                     </div>          
+                            </div>
+                              </div>
+                        </span>
+                  </div>
+
+                <table>
+
+                    <thead>
+                      <tr>
+                          <th> Datum Termin</th>
+                          <th> Nachname, Name </th>
+                          <th> Geb. Datum</th>
+                          <th> Alter</th>
+                          <th> Geschlecht</th>
+                          <th> Grund Termin</th>
+                          <th> Geschlecht</th>
+                          <th> Geschlecht</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <th> Width </th>
+                        <td> 80 cm </td>
+                        <td> 60 cm </td>
+                        <td> 220 cm </td>
+                      </tr>
+                      <tr>
+                        <th> Depth </th>
+                        <td> 70 cm </td>
+                        <td> 65 cm </td>
+                        <td> 80 cm </td>
+                      </tr>
+                      <tr>
+                        <th> Weight </th>
+                        <td> 16 kg </td>
+                        <td> 22 kg </td>
+                        <td> 31 kg </td>
+                      </tr>
+                      <tr>
+                        <th> Height </th>
+                        <td> 120 cm </td>
+                        <td> 92 cm </td>
+                        <td> 80 cm </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+<!--script-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        // MenuToggle
+        //let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let topbar = document.querySelector('.topbar');
+        let main = document.querySelector('.main');
+        let hometable = document.querySelector('.hometable');
+
+        // toggle.onclick
+        navigation.onmouseenter = function(){
+            navigation.classList.toggle('active');
+            topbar.classList.toggle('active');
+            hometable.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        navigation.onmouseleave = function(){
+            navigation.classList.remove('active');
+            topbar.classList.remove('active');
+            hometable.classList.remove('active');
+            main.classList.remove('active');
+        }
+
+
+
+        // Toggle_Todo
+        let toggle_todo_visible = document.querySelector('.toggle_todo_visible');
+        let main_todo = document.querySelector('.main');
+        let todo_text = document.querySelector('.todo_text');
+
+        toggle_todo_visible.onclick = function(){
+            main_todo.classList.toggle('active_todo');
+            todo_text.classList.toggle('active_todo');
+            toggle_todo_visible.classList.toggle('active_todo');
+        }
+
+
+
+
+
+        // add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li.');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover', activeLink));
+    </script>
+
+</body>
+</html>
