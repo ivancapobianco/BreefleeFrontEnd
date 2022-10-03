@@ -62,11 +62,6 @@ body
 
 
 
-.navigation ul li.activelinknav /*,
-.navigation ul li.hovered*/
-{
-    background: var(--white);
-}
 
 
 .navigation ul li:nth-child(1)
@@ -115,10 +110,7 @@ body
     text-align: center;
 }
 
-.navigation ul li.activelinknav a .icon
-{
-color:var(--breeflee_peach_orange);
-}
+
 
 .navigation ul li a .icon ion-icon
 {
@@ -137,11 +129,31 @@ color:var(--breeflee_peach_orange);
     font-size: 16px;
 }
 
+.navigation ul li.activelinknav /*,
+.navigation ul li.hovered*/
+{
+    background: var(--white);
+}
+
+
+
+.navigation ul li.activelinknav a .icon
+{
+    color:var(--breeflee_peach_orange);
+}
 
 .navigation ul li.activelinknav a .title.active {
     color: var(--breeflee_peach_orange);
     transition: var(--transition05s);
 }
+
+
+.navigation ul li.activelinknav:hover a,
+.navigation ul li.activelinknav.hovered a
+{
+    color: var(--breeflee_peach_orange);
+}
+
 
 /* curve outside */
 
@@ -175,22 +187,7 @@ color:var(--breeflee_peach_orange);
     pointer-events: none;
 }
 
-/* main */
 
-/*.main
-{
-    position: absolute;
-    width: calc(100% - 300px);
-    left: 300px;
-    min-height: 100vh;
-    background: var(--white);
-    transition: 0.5s;
-}
-.main.active
-{
-    width: calc (100% - 80px);
-    left: 80px;
-}*/
 
 
 .main
