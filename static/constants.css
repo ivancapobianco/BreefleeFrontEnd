@@ -32,4 +32,5 @@
     --patient_first_col: 25vh;
     --patient_todo_col: 25vh;
     --padding_half_line: 12px; /*for forms*/
+    --input_border_rad: 20px; /*login*/
 }

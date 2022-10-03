@@ -7,8 +7,15 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_popup2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script> 
+        function togglePopup(){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    </script>
+            
 </head>
 
 
@@ -109,13 +116,21 @@
 
         <!--Main-->
         <div class="hometable">
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;
+                    </div>
+                    <h1>Filter</h1>
+                    <p> Test Test Test </p>
+                    </div>
+                    </div>
+                <button onclick="togglePopup()">Filter</button>
 
             <!--Table-->
             <div>
                 <table>
-
                     <thead>
-
                     <!--table head-->
                         <tr>
                           <th> Datum Termin</th>

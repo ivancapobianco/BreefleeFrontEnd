@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style_form.css">
+    <script defer src="/static/js/sidebar_activepage.js"></script>
+    <script defer src="/static/js/change_content_pat_level1.js"></script>
+    <script defer src="/static/js/change_content_pat_level2.js"></script>
 </head>
 
 
@@ -21,7 +25,7 @@
 
                  <!--Logo-->
                  <li>
-                    <a href="#">
+                    <a>
                         <div class="logo">
                             <img src="B3 peach_transp.png">
                             <!--img src="B.png"-->
@@ -31,49 +35,49 @@
 
                  <!--Menu items-->
                  <li>
-                    <a href="#">
+                    <a href="/pythonProject/static/index_table.html">
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></ion-icon></span>
-                        <span class="title">Dashboard</span>
+                        <span class="title">Home</span>
                     </a>
                  </li>
 
                  <li>
-                    <a href="#">
+                    <a href="/pythonProject/static/patient.html">
                         <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <span class="title">Account</span>
+                        <span class="title">Patient</span>
                     </a>
                  </li>
 
                  <li>
-                    <a href="#">
+                    <a href="/pythonProject/static/patient_form.html">
                         <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></ion-icon></span>
-                        <span class="title">Nachricht</span>
+                        <span class="title">Form</span>
                     </a>
                  </li>
 
                  <li>
-                    <a href="#">
+                    <a href="xy">
                         <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></ion-icon></span>
                         <span class="title">Statistik</span>
                     </a>
                  </li>
 
                  <li>
-                    <a href="#">
+                    <a href="xy">
                         <span class="icon"><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
                         <span class="title">Einstellungen</span>
                     </a>
                  </li>
 
                  <li>
-                    <a href="#">
+                    <a href="xy">
                         <span class="icon"><ion-icon name="calendar-outline"></ion-icon></ion-icon></span>
                         <span class="title">Kalender</span>
                     </a>
                  </li>
 
                  <li>
-                    <a href="#">
+                    <a href="xy">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
                         <span class="title">Ausloggen</span>
                     </a>
@@ -116,33 +120,36 @@
                     <br>
                     <img class="patientbild" src="Bild.png">
 
+
                     <div class="input_box button">
-                        <input type="stammdaten" value="STAMMDATEN">
+                            <a class="centralColChange" href="#" data-id_central="1">
+                                <input type="stammdaten" value="STAMMDATEN">
+                            </a>
                     </div>
 
                 </div>
                 <hr/>
 
                 <div class="vtl">
-                    <a href="">
+                    <a class="centralColChange" href="#" data-id_central="2">
                         <div class="event">
-                            <p class="date">12 Mar 2237</p>
-                            <p class="txt">Nachsorge</p>
+                                <p class="date">12 Mar 2237</p>
+                                <p class="txt">Nachsorge</p>
                         </div>
                     </a>
-                    <a href="">
+                    <a class="centralColChange" href="#" data-id_central="3">
                         <div class="event">
                             <p class="date">10 Mar 2236</p>
                             <p class="txt">Nachsorge.</p>
                         </div>
                     </a>
-                    <a href="">
+                    <a class="centralColChange" href="#" data-id_central="4">
                         <div class="event">
                             <p class="date">10 Feb 2235</p>
                             <p class="txt">OP</p>
                         </div>
                     </a>
-                    <a href="">
+                    <a class="centralColChange" href="#" data-id_central="5">
                         <div class="event">
                             <p class="date">10 Jan 2235</p>
                             <p class="txt">OP Vorbereitung </p>
@@ -156,44 +163,229 @@
 
             <!--Central column-->
             <div>
-                <!--Content Navigation-->
-                <div class="menu_navigation">
-                    <nav>
-                        <ul>
-                        <!--<ul class="w-full sm:w-full menu">-->
-                            <a href="#">ÜbersichtT</a>
-                            <a href="#">Anamnese</a>
-                            <a href="#">Ernährungsberatung</a>
-                                <!--<ul class="sub-menu">
-                                    <li><a href="#">Sub-menu 1</a></li>
-                                </ul>-->
 
-                            <a href="#">Labor</a>
-                            <a href="#">Nachsorge Brief</a>
+                <!--Stammdaten-->
+                <div class="central">
 
+                    <div class="content">
 
+                        <div class="">
+                            <!--img src="diagramm.png"-->
+                            <p class="ueberschriften">Stammdaten:</p>
+                            <p class="informationen">Stammdaten</p>
+                            <p class="ueberschriften">Stammdaten::</p>
+                            <p class="informationen">Stammdaten</p>
+                            <p class="ueberschriften">Stammdaten::</p>
+                            <p class="informationen">Stammdaten</p>
+                            <p class="ueberschriften">Stammdaten::</p>
+                            <p class="informationen">Stammdaten.</p>
+                            <p class="ueberschriften">Stammdaten::</p>
+                            <p class="informationen">Stammdaten</p>
+                            <p class="ueberschriften">Stammdaten::</p>
+                            <p class="informationen">Stammdaten</p>
+                        </div>
 
-                        </ul>
+                    </div>
 
-                    </nav>
                 </div>
 
-                <!-- Content Übersicht -->
-                <div class="content">
-                    <br>
-                    <!--img src="diagramm.png"-->
-                    <p class="ueberschriften">Aktuell:</p>
-                    <p class="informationen">Sodbrennen... 1 i I l L</p>
-                    <p class="ueberschriften">Status:</p>
-                    <p class="informationen">Nachsorge <br>Z.n. Gastric-Sleeve am DD.MM.JJJJ (X Monate)</p>
-                    <p class="ueberschriften">Nebendiagnose:</p>
-                    <p class="informationen">Arterielle Hypertonie <br>XY</p>
-                    <p class="ueberschriften">Medikamente:</p>
-                    <p class="informationen">Ramipril 5 mg 1-1-1<br>...</p>
-                    <p class="ueberschriften">Allergie:</p>
-                    <p class="informationen">ASS<br>...</p>
-                    <p class="ueberschriften">Keine Ahnung:</p>
-                    <p class="informationen">Blablabla<br>...</p>
+                <!--Etwas anderes-->
+                <div class="central">
+                    <div class="content">
+                        Test
+                    </div>
+                </div>
+
+                <!--noch was anderes KOMPLETT-->
+                <div class="central active">
+
+                    <!--Content Navigation-->
+                    <div class="menu_navigation">
+                        <nav>
+                            <ul>
+                            <!--<ul class="w-full sm:w-full menu">-->
+                                <a href="#" data-id="1">ÜbersichtT</a>
+                                <a href="#" data-id="2">Anamnese</a>
+                                <a href="#">Ernährungsberatung</a>
+                                    <!-- <ul class="sub-menu">
+                                        <li><a href="#">Sub-menu 1</a></li>
+                                    </ul> -->
+
+                                <a data-id="3">Labor</a>
+                                <a data-id="4">Nachsorge Brief</a>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+
+                    <!-- Content Übersicht -->
+                    <div class="content">
+
+                        <!--uebersicht-->
+                        <div class="showcontent active">
+                            <!--img src="diagramm.png"-->
+                            <p class="ueberschriften">Aktuell:</p>
+                            <p class="informationen">Sodbrennen... 1 i I l L</p>
+                            <p class="ueberschriften">Status:</p>
+                            <p class="informationen">Nachsorge <br>Z.n. Gastric-Sleeve am DD.MM.JJJJ (X Monate)</p>
+                            <p class="ueberschriften">Nebendiagnose:</p>
+                            <p class="informationen">Arterielle Hypertonie <br>XY</p>
+                            <p class="ueberschriften">Medikamente:</p>
+                            <p class="informationen">Ramipril 5 mg 1-1-1<br>...</p>
+                            <p class="ueberschriften">Allergie:</p>
+                            <p class="informationen">ASS<br>...</p>
+                            <p class="ueberschriften">Keine Ahnung:</p>
+                            <p class="informationen">Blablabla<br>...</p>
+                        </div>
+
+                        <!--patient form-->
+                        <div class="showcontent">
+                            <div class="formbreeflee-form-wrapper">
+
+                                <form action="" method="POST">
+
+                                    <!--double in a line | text-->
+                                    <div class="flex formbreeflee-half-line-padding">
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="fName" class="formbreeflee-form-label"> First Name </label>
+                                            <input type="text" name="fName" id="fName" placeholder="First Name" class="formbreeflee-form-input" />
+                                        </div>
+
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="lName" class="formbreeflee-form-label"> Last Name </label>
+                                            <input type="text" name="lName" id="lName" placeholder="Last Name" class="formbreeflee-form-input" />
+                                        </div>
+                                    </div>
+
+                                    <!--single line | number-->
+                                    <div>
+                                        <label for="guest" class="formbreeflee-form-label">How many guest are you bringing?</label>
+                                        <input type="number" name="guest" id="guest" placeholder="5" class="formbreeflee-form-input" />
+                                    </div>
+
+                                    <!--single line | textarea-->
+                                    <div>
+                                        <label for="textarea" class="formbreeflee-form-label">Textarea</label>
+                                        <textarea type="textarea" name="textarea" id="textarea" placeholder="text" rows="5" class="formbreeflee-form-input">asda</textarea>
+                                    </div>
+
+                                    <!--double in a line | date & time-->
+                                    <div class="flex flex-wrap formbreeflee-half-line-padding">
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="date" class="formbreeflee-form-label"> Date </label>
+                                            <input type="date" name="date" id="date" class="formbreeflee-form-input" />
+                                        </div>
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="time" class="formbreeflee-form-label"> Time </label>
+                                            <input type="time" name="time" id="time" class="formbreeflee-form-input" />
+                                        </div>
+                                    </div>
+
+                                    <!--three in a line | text-->
+                                    <div class="flex formbreeflee-half-line-padding">
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="fName" class="formbreeflee-form-label"> One </label>
+                                            <input type="text" name="fName" id="fName" placeholder="First Name" class="formbreeflee-form-input" />
+                                        </div>
+
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="fName" class="formbreeflee-form-label"> Two (Dropdown) </label>
+                                            <select class="formbreeflee-form-input">
+                                            <option>one</option>
+                                            <option>two</option>
+                                            <option>three</option>
+                                        </select>
+                                        </div>
+
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="lName" class="formbreeflee-form-label"> Three </label>
+                                            <input type="text" name="lName" id="lName" placeholder="Last Name" class="formbreeflee-form-input" />
+                                        </div>
+                                    </div>
+
+                                    <!-- Radio Button-->
+                                    <div>
+                                        <label for="fName" class="formbreeflee-form-label"> Radio </label>
+                                        <div class="flex">
+                                          <input type="radio" name="radio1" id="radioButton1" class="formbreeflee-radio" />
+                                          <label for="radioButton1" class="formbreeflee-radio-label"> Yes </label>
+                                        </div>
+                                        <div class="flex">
+                                          <input type="radio" name="radio1" id="radioButton2" class="formbreeflee-radio" />
+                                          <label for="radioButton2" class="formbreeflee-radio-label"> No </label>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!--double in a line | date & time-->
+                                    <div class="flex flex-wrap formbreeflee-half-line-padding">
+
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="fName" class="formbreeflee-form-label"> Radio 2 </label>
+                                            <div class="flex">
+                                              <input type="radio" name="radio1" id="radioButton1" class="formbreeflee-radio" />
+                                              <label for="radioButton1" class="formbreeflee-radio-label"> Yes </label>
+                                            </div>
+                                            <div class="flex">
+                                              <input type="radio" name="radio1" id="radioButton2" class="formbreeflee-radio" />
+                                              <label for="radioButton2" class="formbreeflee-radio-label"> No </label>
+                                            </div>
+                                        </div>
+                                        <div class="w-full sm:w-half formbreeflee-px-3">
+                                            <label for="time" class="formbreeflee-form-label"> Time </label>
+                                            <input type="time" name="time" id="time" class="formbreeflee-form-input" />
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Dropdown -->
+                                    <div>
+                                        <label for="fName" class="formbreeflee-form-label"> Dropdown </label>
+                                        <select class="formbreeflee-form-input">
+                                            <option>one</option>
+                                            <option>two</option>
+                                            <option>three</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div>
+                                        <label for="#" class="formbreeflee-form-label">Upload something</label>
+                                        <input type="file" id="#" class="formbreeflee-form-input">
+                                    </div>
+
+                                    <div>
+                                          <label class="formbreeflee-form-label">Checkbox</label>
+                                          <div>
+                                            <div class="flex">
+                                              <input type="checkbox" value="Web" class="formbreeflee-radio">
+                                              <label class="formbreeflee-radio-label">M</label>
+                                            </div>
+                                            <div class="flex">
+                                                <input type="checkbox" value="iOS" class="formbreeflee-radio">
+                                                <label class="formbreeflee-radio-label">W</label>
+                                            </div>
+                                            <div class="flex">
+                                                <input type="checkbox" value="Andriod" class="formbreeflee-radio">
+                                                <label class="formbreeflee-radio-label">NB</label>
+                                            </div>
+                                          </div>
+                                    </div>
+
+
+                                    <div>
+                                        <button class="formbreeflee-btn">Submit</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -249,18 +441,21 @@
         // MenuToggle
         //let toggle = document.querySelector('.toggle');
         let navigation = document.querySelector('.navigation');
+        let navtitle = document.querySelector('.title');
         let topbar = document.querySelector('.topbar');
         let main = document.querySelector('.main');
 
         // toggle.onclick
         navigation.onmouseenter = function(){
             navigation.classList.toggle('active');
+            navtitle.classList.toggle('active');
             topbar.classList.toggle('active');
             main.classList.toggle('active');
         }
 
         navigation.onmouseleave = function(){
             navigation.classList.remove('active');
+            navtitle.classList.remove('active');
             topbar.classList.remove('active');
             main.classList.remove('active');
         }
@@ -283,7 +478,7 @@
 
 
         // add hovered class in selected list item
-        let list = document.querySelectorAll('.navigation li.');
+      let list = document.querySelectorAll('.navigation li.');
         function activeLink(){
             list.forEach((item) =>
             item.classList.remove('hovered'));
