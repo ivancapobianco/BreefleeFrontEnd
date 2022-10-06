@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    <meta charset="UTF-8">
+    <title>Title</title>
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script> 
+        function togglePopup(){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    </script>
+            
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!--Menu-->
+        <aside class = "navigation">
+             <ul>
+
+                 <!--Logo-->
+                 <li>
+                    <a href="#">
+                        <div class="logo">
+                            <img src="B3 peach_transp.png">
+                            <!--img src="B.png"-->
+                        </div>
+                    </a>
+                 </li>
+
+                 <!--Menu items-->
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Account</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Nachricht</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Statistik</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Einstellungen</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="calendar-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Kalender</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
+                        <span class="title">Ausloggen</span>
+                    </a>
+                 </li>
+
+             </ul>
+        </aside>
+
+
+        <!--Topbar-->
+        <div class="topbar">
+            <!--menu toggle-->
+            <div class="toggle" style="visibility:hidden">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+
+            <!-- userImg -->
+            <div class="user">
+
+              <img src="Bild.png">
+            </div>
+        </div>
+
+
+        <!--Main-->
+        <div class="hometable">
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;
+                    </div>
+                    <h1>Filter</h1>
+                    <div class="container-fluid mt-100">
+           
+     
+                        <div class="row d-flex justify-content-center">
+                 
+                           <div class="col-md-4">
+                               
+                           
+                        <div class="card">
+                     <article class="filter-group">
+                         <header class="card-header">
+                             <a href="#" data-toggle="collapse" data-target="#collapse_aside1" data-abc="true" aria-expanded="false" class="collapsed">
+                                 <i class="icon-control fa fa-chevron-down"></i>
+                                 <h6 class="title">Kategorien </h6>
+                             </a>
+                         </header>
+                         <div class="filter-content collapse" id="collapse_aside1" style="">
+                             <div class="card-body">
+                                
+                                 <ul class="list-menu">
+                                     <li><a href="#" data-abc="true">Kategorie 1</a></li>
+                                     <li><a href="#" data-abc="true">Kategorie 2</a></li>
+                                     <li><a href="#" data-abc="true">Kategorie 3</a></li>
+                                     <li><a href="#" data-abc="true">Kategorie 4</a></li>
+                                     <li><a href="#" data-abc="true">Kategorie 5</a></li>
+                                     <br>
+                                 </ul>
+                 
+                             </div> 
+                         </div>
+                     </article> 
+                     <article class="filter-group">
+                         <header class="card-header">
+                             <a href="#" data-toggle="collapse" data-target="#collapse_aside2" data-abc="true" aria-expanded="false" class="collapsed">
+                                 <i class="icon-control fa fa-chevron-down"></i>
+                                 <h6 class="title">Alter </h6>
+                             </a>
+                         </header>
+                         <div class="filter-content collapse" id="collapse_aside2" style="">
+                             <div class="card-body">
+                                 <input type="range" class="custom-range" min="0" max="100" name="">
+                                 <div class="form-row">
+                                 <div class="form-group col-md-6">
+                                   <label>Min</label>
+                                   <input class="form-control" placeholder="0" type="number">
+                                 </div>
+                                 <div class="form-group text-right col-md-6">
+                                   <label>Max</label>
+                                   <input class="form-control" placeholder="100" type="number">
+                                 </div>
+                                 </div>  
+                                 <br>
+                                 <a href="#" class="highlight-button btn btn-medium button xs-margin-bottom-five" data-abc="true">Bestätigen</a>
+                             </div>  
+                         </div>
+                     </article>  
+                     <article class="filter-group">
+                         <header class="card-header">
+                             <a href="#" data-toggle="collapse" data-target="#collapse_aside3" data-abc="true" aria-expanded="false" class="collapsed">
+                                 <i class="icon-control fa fa-chevron-down"></i>
+                                 <h6 class="title">Kategorie </h6>
+                             </a>
+                         </header>
+                         <div class="filter-content collapse" id="collapse_aside3" style="">
+                             <div class="card-body">
+                                   <label class="checkbox-btn">
+                                     <input type="checkbox">
+                                     <span class="btn btn-light"> A </span>
+                                   </label>
+                 
+                                   <label class="checkbox-btn">
+                                     <input type="checkbox">
+                                     <span class="btn btn-light"> B </span>
+                                   </label>
+                 
+                                   <label class="checkbox-btn">
+                                     <input type="checkbox">
+                                     <span class="btn btn-light"> C </span>
+                                   </label>
+                 
+                                   <label class="checkbox-btn">
+                                     <input type="checkbox">
+                                     <span class="btn btn-light"> D </span>
+                                   </label>
+                                   <label class="checkbox-btn">
+                                     <input type="checkbox">
+                                     <span class="btn btn-light"> E </span>
+                                   </label>
+                                   <br>
+                             </div>  
+                         </div>
+                         <br>
+                     </article>  
+                     <article class="filter-group">
+                         <header class="card-header">
+                             <a href="#" data-toggle="collapse" data-target="#collapse_aside4" data-abc="true" class="collapsed" aria-expanded="false">
+                                 <i class="icon-control fa fa-chevron-down"></i>
+                                 <h6 class="title">Kategorie </h6>
+                             </a>
+                         </header>
+                         <div class="filter-content collapse" id="collapse_aside4" style="">
+                             <div class="card-body">
+                               <label class="custom-control">
+                               <input type="checkbox" checked="" class="custom-control-input">
+                               <div class="custom-control-label">Patient 1  </div>
+                             </label>
+                 
+                             <label class="custom-control">
+                               <input type="checkbox" checked="" class="custom-control-input">
+                               <div class="custom-control-label">Patient 2 </div>
+                             </label>
+                 
+                             <label class="custom-control">
+                               <input type="checkbox" checked="" class="custom-control-input">
+                               <div class="custom-control-label">Patient 3</div>
+                             </label>
+                 
+                             <label class="custom-control">
+                               <input type="checkbox" checked="" class="custom-control-input">
+                               <div class="custom-control-label">Patient 4</div>
+                             </label>
+                             </div>   
+                         </div>
+                     </article>  
+                 </div>
+                 
+                 </div>
+                            
+                        </div>
+                          </div>
+                    </div>
+                    </div>
+                <button onclick="togglePopup()">Filter</button>
+
+            <!--Table-->
+            <div>
+                <table>
+                    <thead>
+                    <!--table head-->
+                        <tr>
+                          <th> Datum Termin</th>
+                          <th> Nachname, Name </th>
+                          <th> Geb. Datum</th>
+                          <th> Alter</th>
+                          <th> Geschlecht</th>
+                          <th> Grund Termin</th>
+                          <th> Geschlecht</th>
+                          <th> Geschlecht</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <!--table body-->
+                    <tbody>
+
+                      <tr data-href="#">
+                        <td> 01.01.1990 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 24 </td>
+                        <td> M </td>
+                        <td> 80 cm </td>
+                        <td> 60 cm </td>
+                        <td> 220 cm </td>
+
+                      </tr>
+
+                      <tr data-href="#">
+                        <td> 12.12.2003 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 35 </td>
+                        <td> F </td>
+                        <td> 70 cm </td>
+                        <td> 65 cm </td>
+                        <td> 80 cm </td>
+                      </tr>
+                      <tr data-href="#">
+                        <td> 13.04.1996 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 43 </td>
+                        <td> F </td>
+                        <td> 16 kg </td>
+                        <td> 22 kg </td>
+                        <td> 31 kg </td>
+                      </tr>
+                      <tr data-href="#">
+                        <td> 24.08.1994 </td>
+                        <td> Mustermann, Max </td>
+                        <td> 01.01.1990 </td>
+                        <td> 45 </td>
+                        <td> F </td>
+                        <td> 120 cm </td>
+                        <td> 92 cm </td>
+                        <td> 80 cm </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+<!--script-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        // MenuToggle
+        //let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let topbar = document.querySelector('.topbar');
+        let main = document.querySelector('.main');
+        let hometable = document.querySelector('.hometable');
+
+        // toggle.onclick
+        navigation.onmouseenter = function(){
+            navigation.classList.toggle('active');
+            topbar.classList.toggle('active');
+            hometable.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        navigation.onmouseleave = function(){
+            navigation.classList.remove('active');
+            topbar.classList.remove('active');
+            hometable.classList.remove('active');
+            main.classList.remove('active');
+        }
+
+
+
+        // Toggle_Todo
+        let toggle_todo_visible = document.querySelector('.toggle_todo_visible');
+        let main_todo = document.querySelector('.main');
+        let todo_text = document.querySelector('.todo_text');
+
+        toggle_todo_visible.onclick = function(){
+            main_todo.classList.toggle('active_todo');
+            todo_text.classList.toggle('active_todo');
+            toggle_todo_visible.classList.toggle('active_todo');
+        }
+
+
+
+
+
+        // add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li.');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover', activeLink));
+    </script>
+    <script>
+        //link rows of a table
+        $(document).ready(function () {
+            $(document.body).on("click", "tr[data-href]", function () {
+                window.location.href = this.dataset.href;
+            });
+        });
+    </script>
+
+</body>
+</html>
