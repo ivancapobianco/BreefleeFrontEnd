@@ -7,8 +7,13 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="style_form.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style_form.css">
+
+    <!--JS-->
+    <script defer src="/static/js/sidebar.js"></script>
     <script defer src="/static/js/sidebar_activepage.js"></script>
     <script defer src="/static/js/change_content_pat_level1.js"></script>
     <script defer src="/static/js/change_content_pat_level2.js"></script>
@@ -49,7 +54,7 @@
                  </li>
 
                  <li>
-                    <a href="/pythonProject/static/patient_form.html">
+                    <a href="xy">
                         <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></ion-icon></span>
                         <span class="title">Form</span>
                     </a>
@@ -90,7 +95,7 @@
         <!--Topbar-->
         <div class="topbar">
             <!--menu toggle-->
-            <div class="toggle" style="visibility:hidden">
+            <div class="toggle"> <!--style="visibility:hidden"-->
               <ion-icon name="menu-outline"></ion-icon>
             </div>
 
@@ -110,7 +115,7 @@
             </div>
         </div>
 
-
+        <div class="hometable"></div>
         <!--Main-->
         <div class="main">
 
@@ -439,28 +444,6 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script>
-
-        // MenuToggle
-        //let toggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.navigation');
-        let navtitle = document.querySelector('.title');
-        let topbar = document.querySelector('.topbar');
-        let main = document.querySelector('.main');
-
-        // toggle.onclick
-        navigation.onmouseenter = function(){
-            navigation.classList.toggle('active');
-            navtitle.classList.toggle('active');
-            topbar.classList.toggle('active');
-            main.classList.toggle('active');
-        }
-
-        navigation.onmouseleave = function(){
-            navigation.classList.remove('active');
-            navtitle.classList.remove('active');
-            topbar.classList.remove('active');
-            main.classList.remove('active');
-        }
 
 
 

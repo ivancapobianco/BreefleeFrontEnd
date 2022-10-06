@@ -31,6 +31,7 @@
     --menu_closed: 80px;
     --patient_first_col: 25vh;
     --patient_todo_col: 25vh;
+    --patient_todo_col_closed: 0vh;
     --padding_half_line: 12px; /*for forms*/
     --input_border_rad: 20px; /*login*/
 }
