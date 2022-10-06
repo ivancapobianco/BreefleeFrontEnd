@@ -567,7 +567,7 @@ img {
     #font-weight: bold;
     #transition: left .3s ease 0s;
     word-wrap: break-word;
-    #margin: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
 
 }
 
@@ -974,13 +974,14 @@ fieldset {
     display: flex;
     top: var(--topbar_height);
     width: auto;
-    height: 100%;
+    height: auto;
     #grid-gap: 10px;
     background-color: var(--grey_ultra_light); /*#2196F3;*/
     padding: 10px;
     margin-left: var(--menu_closed);
     transition: var(--transition05s);
     justify-content: center;
+    color: var(--grey_black);
 }
 
 
@@ -996,17 +997,71 @@ fieldset {
 .hometable > div {
   background-color: var(--white); /*rgba(255, 255, 255, 0.8);*/
   #border: 3px solid var(--grey_light);
+  margin-top: var(--topbar_height);
   height: calc(100vh - var(--topbar_height));
   padding: 20px 20px 20px 20px;
   #border-radius: 20px;
   #box-shadow: 0 3px 4px 0 rgba(0,0,0,0.13);
 }
 
+.tablefilter {
+    color:var(--grey_black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+}
+
+
+.tablefilter .datefilter button {
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.tablefilter .datefilter span {
+  border: solid var(--grey_dark);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.tablefilter .datefilter span:hover {
+  border: solid var(--breeflee_peach_orange);
+  border-width: 0 3px 3px 0;
+}
+
+
+.prev-day {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.next-day {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.tablefilter .datefilter input,
+.today-date {
+    color: var(--grey_dark);
+    border: 0px solid var(--grey_medium_dark);
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    #font-weight: bold;
+    cursor: pointer;
+}
+
+
+
 
 
 table {
   width: auto;
-  margin-top: calc(var(--topbar_height) + 40px);
   #border: 1px solid #343a40;
   border-collapse: collapse;
   border-radius: 20px;

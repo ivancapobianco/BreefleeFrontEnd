@@ -1,29 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="test.css">
-    <script defer src="/test/test.js"></script>
-</head>
-<body>
- <div class="container">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <nav class="nav">
-        <a data-id="1">Item 1</a>
-        <a data-id="2">Item 2</a>
-        <a data-id="3">Item 3</a>
-  </nav>
-  <main>
-    <div class="culo active">Item 1 Content</div>
-      <div></div>
-    <div class="culo">Item 2 Content</div>
-      <div></div>
-
-    <div class="culo">Item 3 Content</div>
-      <div></div>
-  </main>
-
-</div>
-</body>
-</html>
+    <script>
+    $(document).ready(function(){
+    $('#datepicker').val(moment().format('DD.MM.YYYY'));
+        $('#datepicker').datepicker();
+       $('.next-day').on('click', function () {
+           var date = $('#datepicker').datepicker('getDate');
+           date.setDate(date.getDate() +1)
+           $('#datepicker').datepicker('setDate', date);
+       });
+       $('.prev-day').on('click', function () {
+           var date = $('#datepicker').datepicker('getDate');
+           date.setDate(date.getDate() -1)
+           $('#datepicker').datepicker('setDate', date);
+       });
+       $('.today-date').on('click', function () {
+           var date = moment().format('DD/MM/YYYY');
+           $('#datepicker').datepicker('setDate', date);
+       });
+       });
+       </script>
+    <button class="prev-day btn btn-outline-secondary"><i class="fa fa-angle-left" aria-hidden='true'></i></button>
+    <button class='today-date btn btn-outline-secondary'>Today</button>
+    <input type='date' id='datepicker'  name='datepicker'>
+    <button class='next-day btn btn-outline-secondary' ><i class='fa fa-angle-right' aria-hidden='true'></i></button>

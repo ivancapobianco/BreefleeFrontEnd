@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!---<link rel="stylesheet" type="text/css" href="style_popup2.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="/static/js/sidebar_activePage.js"></script>
     <script defer src="/static/js/table.js"></script>
+    <script defer src="/static/js/date_selection.js"></script>
+
 
 </head>
 
@@ -113,8 +116,44 @@
         <!--Main-->
         <div class="hometable">
 
-            <!--Table-->
+
             <div>
+
+
+                <!--table filter-->
+                <div class="tablefilter">
+
+                    <div class="datefilter">
+                        <span class="prev-day"></span>
+
+                        <input type='date' id='datetoday'>
+                        <button class='today-date'>Today</button>
+
+                        <span class='next-day'></span>
+                    </div>
+
+                    <div>
+
+                    <!--
+                                    <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;
+                    </div>
+                    <h1>Filter</h1>
+                    <p> Test Test Test </p>
+                    </div>
+                    </div> -->
+
+
+                        <button onclick="togglePopup()">Filter</button>
+
+
+                    </div>
+
+                </div>
+
+                <!--Table-->
                 <table>
 
                     <thead>
@@ -248,6 +287,12 @@
         }
         list.forEach((item) =>
         item.addEventListener('mouseover', activeLink));
+    </script>
+
+        <script>
+        function togglePopup(){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
     </script>
 
 </body>
