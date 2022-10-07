@@ -86,14 +86,6 @@ body
 
 
 
-/*.navigation ul li a:is(:link, :active, :visited).activelinknav {
-    color: var(--breeflee_green);
-    background-color: black;
-}
-*/
-
-
-
 
 /*position and attributes of icon and title*/
 .navigation ul li a .icon
@@ -215,7 +207,7 @@ body
   display: grid;
   grid-template-columns: var(--patient_first_col) auto var(--patient_todo_col);
   height: calc(100% - var(--topbar_height));
-  grid-gap: 40px;
+  grid-gap: 30px;
   background-color: var(--grey_light); /*#2196F3;*/
   padding: 10px;
   margin-left: var(--menu_closed);
@@ -240,7 +232,7 @@ body
 .main > div {
   background-color: var(--white); /*rgba(255, 255, 255, 0.8);*/
   +border: 3px solid var(--grey_light);
-  padding: 20px 20px 20px 20px;
+  padding: 10px;
   border-radius: 20px;
   #box-shadow: 0 3px 4px 0 rgba(0,0,0,0.13);
 }
@@ -330,21 +322,31 @@ body
 
 .user
 {
+    display:flex;
     position: relative;
-    width: 40px;
+    width: auto;
+
     height: 40px;
-    border-radius: 50%;
+    top: auto;
     overflow: hidden;
     cursor: pointer;
+    justify-content: center;
+}
+
+.user .user_name {
+    padding: 10px 0;
+    margin: 0 7px;
 }
 
 .user img
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    #right: 5px;
+    #top: 0;
+    #left: 0;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
 }
 
@@ -481,7 +483,7 @@ img {
 
 .content{
     overflow:scroll;
-    padding: 30px 80px;
+    padding: 30px 50px;
     overflow-y: auto;
     height: calc(100vh - var(--topbar_height)*3);
 }
@@ -556,7 +558,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: left;*/
-    padding: 0px 80px;
+    padding: 0px 50px;
     }
 
 .menu_navigation nav{
@@ -592,7 +594,6 @@ img {
 
 .menu_navigation nav a:hover {
   color: var(--breeflee_peach_orange);
-  #background-color: var(--breeflee_green);
 }
 
 
