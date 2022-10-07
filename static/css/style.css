@@ -1090,6 +1090,7 @@ table {
 
 .thead {
     #border-radius: 20px;
+    #cursor:pointer;
 }
 
 th,
@@ -1104,7 +1105,8 @@ td {
 thead th {
   background-color: var(--breeflee_peach_orange);
   color: #fff;
-  width: 25%;
+  width: auto;
+  cursor:pointer;
 
 
 }

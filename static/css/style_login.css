@@ -40,8 +40,8 @@
 
   .main_div{
     width: 100%;
-    #background: transparent;
-    background: rgba(255, 255, 255, 0.75);
+    background: white;
+    #background: rgba(255, 255, 255, 0.75);
     padding: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     0border: 4px solid var(--white);
@@ -61,7 +61,7 @@
     margin-top: 20px;
     background: var(--white);
     border-radius: var(--input_border_rad);
-    border: 0px solid var(--grey_medium_light);
+    border: 2px solid var(--grey_medium_light);
   }
 
   .input_box input{
@@ -107,22 +107,25 @@
     color: #333;
   }
 
-  .button input{
+
+.submit_button {
+    border: 0px;
+}
+
+.submit_button input {
     padding-left: 0;
-    background: var(--breeflee_green);
+    background: var(--breeflee_blue_green);
     color: #fff;
     border: none;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+
   }
 
-  //.button input{
-    display: none;
-  }
 
-  .button input:hover{
-    background: var(--breeflee_blue_green);
+  .submit_button input:hover{
+    background: var(--breeflee_green);
   }
   
   form a{

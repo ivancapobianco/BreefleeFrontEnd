@@ -1,7 +1,7 @@
 //change the condition as needed
 const condition = "admin"
 
-let submit_button = document.querySelector('.button');
+let submit_button = document.querySelector('.submit_button');
 const form = document.querySelector("#loginform");
 let progress = document.querySelector('.progress');
 let input_box = document.querySelectorAll('.input_box input');

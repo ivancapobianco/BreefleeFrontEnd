@@ -67,7 +67,7 @@
   padding: var(--padding_half_line) calc(var(--padding_half_line)*2);
   border: none;
   font-weight: 600;
-  background-color: var(--breeflee_green); /*#6a64f1;*/
+  background-color: var(--breeflee_blue_green); /*#6a64f1;*/
   color: white;
   cursor: pointer;
   margin-top: calc(var(--padding_half_line)*2);
@@ -76,7 +76,7 @@
 }
 .formbreeflee-btn:hover {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-  background-color: var(--breeflee_blue_green);
+  background-color: var(--breeflee_green);
 }
 
 
