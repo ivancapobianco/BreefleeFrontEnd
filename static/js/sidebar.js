@@ -14,8 +14,6 @@
             topbar.classList.toggle('active');
             hometable.classList.toggle('active');
             main.classList.toggle('active');
-
-
         }
 
         //navigation.onmouseleave = function(){

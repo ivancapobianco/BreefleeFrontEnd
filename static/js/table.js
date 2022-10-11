@@ -34,7 +34,7 @@
 	function buildTable(data){
 		var table = document.getElementById('tableBody')
 		var ar = Object.keys(data[0])
-		console.log(data[0][ar[0]])
+
 
 		table.innerHTML = ''
 
