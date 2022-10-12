@@ -448,6 +448,9 @@ img {
     text-align: center;
     border-radius: 20px;
     border: 1px var(--grey_medium_dark) solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .button input:hover {
@@ -463,24 +466,49 @@ img {
 
 
 
+.add_button button{
+    display: block;
+    background: var(--grey_light);
+    color: var(--grey_dark);
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    #padding: 0px;
+    #transition: all 0.3s linear;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+
+    #text-align: center;
+    border-radius: 50%;
+    border: 1px var(--grey_medium_dark) solid;
+  }
+
+
+  .add_button button:hover {
+    color: var(--breeflee_peach_orange);
+    border: 1px var(--breeflee_peach_orange) solid;
+  }
+
+
   .vl {
     position: relative;
     border-left: 1px solid var(--grey_medium_dark);
     height: 900px;
-    position: absolute;
+    #position: absolute;
     left: 320px;
     margin-left: -3px;
-    top: 80px;
+    #top: 80px;
   }
 
   .vl1 {
     position: relative;
     border-left: 1px solid var(--grey_medium_dark);
     height: 900px;
-    position: absolute;
+    #position: absolute;
     left: 1500px;
     margin-left: -3px;
-    top: 90px;
+    #top: 90px;
   }
 
   hr {

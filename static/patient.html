@@ -11,12 +11,16 @@
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/style_form.css">
+    <link rel="stylesheet" href="css/style_popup.css">
 
     <!--JS-->
     <script defer src="/static/js/sidebar.js"></script>
+    <script defer src="/static/js/date_selection.js"></script>
+    <script defer src="/static/js/form.js"></script>
     <script defer src="/static/js/sidebar_activepage.js"></script>
     <script defer src="/static/js/change_content_pat_level1.js"></script>
     <script defer src="/static/js/change_content_pat_level2.js"></script>
+    <script defer src="/static/js/popup.js"></script>
 </head>
 
 
@@ -141,7 +145,131 @@
                 </div>
                 <hr/>
 
+                <!-- Button + document -->
+                <div class="add_button">
+                    <button onclick="togglePopup('add_document')">+</button>
+                </div>
+
+                <!-- popup add document -->
+                <div class="popup" id="add_document">
+                        <div class="overlay">
+                        </div>
+
+                        <div class="p_content">
+                            <div class="close-btn" onclick="togglePopup('add_document')">&times;
+                            </div>
+
+                            <p class="title">Add Document</p>
+
+
+
+                            <div class="formbreeflee-form-wrapper">
+
+                                <form action="" method="POST">
+
+
+
+                                    <!-- Radio Button-->
+                                    <div>
+                                        <label for="fName" class="formbreeflee-form-label"> Type </label>
+                                            <div class="formbreeflee-segmented-radio">
+
+
+                                                  <label for="radioButton1">
+                                                      <input type="radio" name="radio1" id="radioButton1"  />
+                                                      <span>Notiz</span>
+                                                  </label>
+
+                                                  <label for="radioButton2">
+                                                      <input type="radio" name="radio2" id="radioButton2"/>
+                                                      <span>Plattform</span>
+                                                  </label>
+
+                                                  <label for="radioButton3">
+                                                      <input type="radio" name="radio3" id="radioButton3" />
+                                                      <span>OP-Vorbereitung</span>
+                                                  </label>
+
+                                                  <label for="radioButton4" >
+                                                      <input type="radio" name="radio4" id="radioButton4" />
+                                                      <span>OP</span>
+                                                  </label>
+
+                                                  <label for="radioButton5" >
+                                                      <input type="radio" name="radio5" id="radioButton5" />
+                                                      <span>Nachsorge</span>
+                                                  </label>
+
+                                                    <label for="radioButton6" >
+                                                      <input type="radio" name="radio6" id="radioButton6" />
+                                                      <span>Ernährungsberatung</span>
+                                                    </label>
+                                                <!--
+                                                <div class="flex">
+                                                  <input type="radio" name="radio1" id="radioButton2" class="formbreeflee-radio" />
+                                                  <label for="radioButton2" class="formbreeflee-radio-label"> Plattform </label>
+                                                </div>
+                                                <div class="flex">
+                                                  <input type="radio" name="radio1" id="radioButton3" class="formbreeflee-radio" />
+                                                  <label for="radioButton3" class="formbreeflee-radio-label"> OP-Vorbereitung </label>
+                                                </div>
+                                                <div class="flex">
+                                                  <input type="radio" name="radio1" id="radioButton4" class="formbreeflee-radio" />
+                                                  <label for="radioButton4" class="formbreeflee-radio-label"> Operation </label>
+                                                </div>
+                                                <div class="flex">
+                                                  <input type="radio" name="radio1" id="radioButton5" class="formbreeflee-radio" />
+                                                  <label for="radioButton5" class="formbreeflee-radio-label"> Nachsorge </label>
+                                                </div>
+                                                <div class="flex">
+                                                  <input type="radio" name="radio1" id="radioButton6" class="formbreeflee-radio" />
+                                                  <label for="radioButton6" class="formbreeflee-radio-label"> Ernährungsberatung </label>
+                                                </div> -->
+                                            </div>
+                                    </div>
+
+
+                                    <!--date-->
+                                    <div>
+                                        <div>
+                                            <label for="date" class="formbreeflee-form-label"> Date </label>
+                                            <input type="date" name="date" id='datetoday' class="formbreeflee-form-input" />
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Dropdown -->
+                                    <div>
+                                        <label for="fName" class="formbreeflee-form-label" "> Fallnummer </label>
+                                        <select class="formbreeflee-form-input">
+                                            <option>one</option>
+                                            <option>two</option>
+                                            <option>three</option>
+                                        </select>
+                                    </div>
+
+
+
+                                    <!-- Submit Button-->
+                                    <div>
+                                        <button class="formbreeflee-btn">Submit</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                <!--list of documents-->
                 <div class="vtl">
+
+
+
                     <a class="centralColChange" href="#" data-id_central="2">
                         <div class="event">
                                 <p class="date">12 Mar 2237</p>

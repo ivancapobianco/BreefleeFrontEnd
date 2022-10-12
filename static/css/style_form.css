@@ -1,11 +1,12 @@
 @import '/static/css/constants.css';
 
+/*
 .formbreeflee-main-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0px;
-}
+}*/
 
 .formbreeflee-form-wrapper {
   margin: 0 auto;
@@ -42,7 +43,7 @@
   width: 100%;
   padding: var(--padding_half_line) calc(var(--padding_half_line)*2);
   border-radius: 6px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--grey_medium_light);
   background: white;
   font-weight: 500;
   font-size: 16px;
@@ -59,6 +60,59 @@
   border: 3px solid var(--breeflee_peach_orange); /*#6a64f1;*/
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
+
+.formbreeflee-segmented-radio {
+
+  position:relative;
+  display:inline;
+
+  }
+
+  .formbreeflee-segmented-radio label span {
+
+    padding: var(--padding_half_line) calc(var(--padding_half_line)*2);
+    border: 1px solid var(--grey_medium_light);
+    background: var(--white) ;
+    position:relative;
+    #z-index:10;
+    cursor: pointer;
+
+  }
+
+    .formbreeflee-segmented-radio label span:hover{
+      background: var(--white);
+      border: 1px solid var(--breeflee_peach_orange);
+      color: var(--breeflee_peach_orange);
+    }
+
+
+  .formbreeflee-segmented-radio label:first-of-type span{
+    border-radius: 6px 0 0 6px;
+    #border-width: 1px 0 1px 1px;
+  }
+  .formbreeflee-segmented-radio label:last-of-type span{
+    border-radius: 0 6px 6px 0;
+  }
+  .formbreeflee-segmented-radio input[type="radio"] {
+    margin-top: calc(var(--padding_half_line)*2);
+    margin-bottom: calc(var(--padding_half_line)*1);
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    width:0;
+
+    height:0;
+    margin-left: calc(var(--padding_half_line) * -1);
+  }
+
+  .formbreeflee-segmented-radio label input[type="radio"]:checked + span{
+    background: var(--breeflee_peach_orange);
+    border: 1px solid var(--breeflee_peach_orange);
+    color: var(--white);
+  }
+
+
 
 .formbreeflee-btn {
   text-align: center;
