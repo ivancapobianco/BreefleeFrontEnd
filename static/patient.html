@@ -380,9 +380,9 @@
 
                         <!--patient form-->
                         <div class="showcontent">
-                            <div class="formbreeflee-form-wrapper">
+                            <div class="formbreeflee-form-wrapper"> <!-- onfocusout="myFunction()"> -->
 
-                                <form action="" method="POST">
+                                <form action="" method="POST" id="form_pat">
 
                                     <!--double in a line | text-->
                                     <div class="flex formbreeflee-half-line-padding">
@@ -513,9 +513,48 @@
                                           </div>
                                     </div>
 
-
+                                    <!--Submit button-->
                                     <div>
-                                        <button class="formbreeflee-btn">Submit</button>
+                                        <button class="formbreeflee-btn" id='save_btn'>Submit</button>
+                                    </div>
+
+                                    <!-- Popup save -->
+                                    <div>
+
+                                        <div class="popup" id="save_form">
+                                            <div class="overlay">
+                                            </div>
+
+                                            <div class="p_content_alert">
+                                                <div class="close-btn" onclick="togglePopup('save_form')">&times;
+                                                </div>
+
+                                                <p class="title">Save Form</p>
+
+                                                <label for="fName" class="formbreeflee-form-label"> Do you want to save? </label>
+
+                                                <div class="flex formbreeflee-half-line-padding">
+
+                                                    <div class="w-full sm:w-half formbreeflee-px-3">
+                                                        <button class="formbreeflee-btn" id='save_btn_popup'>Save</button>
+                                                    </div>
+
+                                                    <div class="w-full sm:w-half formbreeflee-px-3">
+                                                        <button class="formbreeflee-btn">Don't save</button>
+                                                    </div>
+
+                                                    <div class="w-full sm:w-half formbreeflee-px-3">
+                                                        <button class="formbreeflee-btn" onclick="togglePopup('save_form')">Cancel</button>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+
                                     </div>
 
                                 </form>
