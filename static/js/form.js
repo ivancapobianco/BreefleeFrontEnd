@@ -1,51 +1,40 @@
-//$('input[type="radio"]').change(function(){
-//    if($(this).is(":checked")) {
-//        $(this).parent('label').addClass("checked");
-//    } else {
-//        $(this).parent('label').removeClass("checked");
-//    }
-//});
-
-
-
-
 function saveChanges() {
 var field = document.getElementById("form_pat");
 var save_btn = document.getElementById("save_btn");
 var save_btn_popup = document.getElementById("save_btn_popup");
 var clicked = false
 var clicked_field = false
+var clicked_save_popup = false
 
-//document.addEventListener("click", function() {
-//    multiSelectUpdate();
-//})
 
 
 function form_saved(x) {
 x.addEventListener("click", function() {
     clicked = true;
+    clicked_save_popup = true;
+    togglePopup('saved_alert');
     alert("Correctly saved");
-})
 
+    });
 }
 
 form_saved(save_btn)
+form_saved(save_btn_popup)
 
-
-//onblur
+//eventually try "onblur" instead "focusout"
 field.addEventListener("focusout", function(e) {
 
     if (clicked == true) {
 
     } else {
-        console.log(e.relatedTarget);
-        if (!field.contains(e.relatedTarget)) {
-        togglePopup('save_form');
-        form_saved(save_btn_popup);
-        }
-};
-});
 
+        if (!field.contains(e.relatedTarget)) {
+        //console.log(e.relatedTarget);
+            togglePopup('save_form');
+            //form_saved(save_btn_popup)
+            }
+        };
+    });
 }
 
 saveChanges()

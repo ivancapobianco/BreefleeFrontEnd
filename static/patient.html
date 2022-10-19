@@ -162,48 +162,51 @@
                             <p class="title">Add Document</p>
 
 
-
                             <div class="formbreeflee-form-wrapper">
 
                                 <form action="" method="POST">
 
 
 
-                                    <!-- Radio Button-->
+                                    <!-- Segmented Radio Button-->
                                     <div>
                                         <label for="fName" class="formbreeflee-form-label"> Type </label>
                                             <div class="formbreeflee-segmented-radio">
 
 
-                                                  <label for="radioButton1">
-                                                      <input type="radio" name="radio1" id="radioButton1"  />
+
+
+
+                                                  <label>
+                                                      <input type="radio" name="radio-seg" id="radioButton1">
                                                       <span>Notiz</span>
                                                   </label>
 
-                                                  <label for="radioButton2">
-                                                      <input type="radio" name="radio2" id="radioButton2"/>
+                                                  <label>
+                                                      <input type="radio" name="radio-seg" id="radioButton2">
                                                       <span>Plattform</span>
                                                   </label>
 
-                                                  <label for="radioButton3">
-                                                      <input type="radio" name="radio3" id="radioButton3" />
+                                                  <label>
+                                                      <input type="radio" name="radio-seg" id="radioButton3">
                                                       <span>OP-Vorbereitung</span>
                                                   </label>
 
-                                                  <label for="radioButton4" >
-                                                      <input type="radio" name="radio4" id="radioButton4" />
+                                                  <label>
+                                                      <input type="radio" name="radio-seg" id="radioButton4">
                                                       <span>OP</span>
                                                   </label>
 
-                                                  <label for="radioButton5" >
-                                                      <input type="radio" name="radio5" id="radioButton5" />
+                                                  <label>
+                                                      <input type="radio" name="radio-seg" id="radioButton5">
                                                       <span>Nachsorge</span>
                                                   </label>
 
-                                                    <label for="radioButton6" >
-                                                      <input type="radio" name="radio6" id="radioButton6" />
+                                                    <label>
+                                                      <input type="radio" name="radio-seg" id="radioButton6">
                                                       <span>Ernährungsberatung</span>
                                                     </label>
+
                                                 <!--
                                                 <div class="flex">
                                                   <input type="radio" name="radio1" id="radioButton2" class="formbreeflee-radio" />
@@ -267,8 +270,6 @@
 
                 <!--list of documents-->
                 <div class="vtl">
-
-
 
                     <a class="centralColChange" href="#" data-id_central="2">
                         <div class="event">
@@ -382,12 +383,12 @@
                         <div class="showcontent">
                             <div class="formbreeflee-form-wrapper"> <!-- onfocusout="myFunction()"> -->
 
-                                <form action="" method="POST" id="form_pat">
+                                <form action="" method="POST" id="form_pat" tabindex="0">
 
                                     <!--double in a line | text-->
                                     <div class="flex formbreeflee-half-line-padding">
                                         <div class="w-full sm:w-half formbreeflee-px-3">
-                                            <label for="fName" class="formbreeflee-form-label"> First Name </label>
+                                            <label for="fName" class="formbreeflee-form-label" > First Name </label>
                                             <input type="text" name="fName" id="fName" placeholder="First Name" class="formbreeflee-form-input" />
                                         </div>
 
@@ -526,8 +527,10 @@
                                             </div>
 
                                             <div class="p_content_alert">
+
                                                 <div class="close-btn" onclick="togglePopup('save_form')">&times;
                                                 </div>
+
 
                                                 <p class="title">Save Form</p>
 
@@ -540,12 +543,14 @@
                                                     </div>
 
                                                     <div class="w-full sm:w-half formbreeflee-px-3">
-                                                        <button class="formbreeflee-btn">Don't save</button>
+                                                        <button class="formbreeflee-btn" style="background-color: var(--breeflee_rosa);">Don't save</button>
                                                     </div>
 
+                                                    <!--
                                                     <div class="w-full sm:w-half formbreeflee-px-3">
                                                         <button class="formbreeflee-btn" onclick="togglePopup('save_form')">Cancel</button>
                                                     </div>
+                                                    -->
 
                                                 </div>
 
@@ -556,6 +561,19 @@
                                         </div>
 
                                     </div>
+
+                                    <!-- Popup saved -->
+
+                                        <div class="popup" id="saved_alert">
+                                            <div class="overlay">
+                                            </div>
+
+                                            <div class="p_content_alert">
+
+                                                <p class="title">Save Form</p>
+                                                Correctly saved
+                                            </div>
+                                        </div>
 
                                 </form>
 
@@ -634,7 +652,7 @@
 
 
         // add hovered class in selected list item
-      let list = document.querySelectorAll('.navigation li.');
+      let list = document.querySelectorAll('.navigation li');
         function activeLink(){
             list.forEach((item) =>
             item.classList.remove('hovered'));
