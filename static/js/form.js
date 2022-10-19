@@ -1,10 +1,14 @@
+var clicked = false
+var clicked_save_popup = false
+
+
 function saveChanges() {
+    console.log(clicked);
+
     var field = document.getElementById("form_pat");
     var save_btn = document.getElementById("save_btn");
     var save_btn_popup = document.getElementById("save_btn_popup");
-    var clicked = false
-    var clicked_field = false
-    var clicked_save_popup = false
+
 
 
     function form_saved(x) {
@@ -16,10 +20,9 @@ function saveChanges() {
 
         setTimeout(function() {
             togglePopup('saved_alert');
-        }, 1000);
+        }, 2000);
 
         //alert("Correctly saved")
-
         });
     }
 
@@ -34,9 +37,7 @@ function saveChanges() {
         } else {
 
             if (!field.contains(e.relatedTarget)) {
-            //console.log(e.relatedTarget);
                 togglePopup('save_form');
-                //form_saved(save_btn_popup)
                 }
             };
         });
