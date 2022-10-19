@@ -255,7 +255,7 @@
 
                                     <!-- Submit Button-->
                                     <div>
-                                        <button class="formbreeflee-btn">Submit</button>
+                                        <button type="button" class="formbreeflee-btn">Submit</button>
                                     </div>
 
                                 </form>
@@ -539,11 +539,11 @@
                                                 <div class="flex formbreeflee-half-line-padding">
 
                                                     <div class="w-full sm:w-half formbreeflee-px-3">
-                                                        <button class="formbreeflee-btn" id='save_btn_popup'>Save</button>
+                                                        <button type="button" class="formbreeflee-btn" id='save_btn_popup' onclick="togglePopup('save_form')">Save</button>
                                                     </div>
 
                                                     <div class="w-full sm:w-half formbreeflee-px-3">
-                                                        <button class="formbreeflee-btn" style="background-color: var(--breeflee_rosa);">Don't save</button>
+                                                        <button class="formbreeflee-btn" style="background-color: var(--breeflee_rosa);" onclick="togglePopup('save_form')">Don't save</button>
                                                     </div>
 
                                                     <!--
@@ -565,10 +565,9 @@
                                     <!-- Popup saved -->
 
                                         <div class="popup" id="saved_alert">
-                                            <div class="overlay">
-                                            </div>
 
-                                            <div class="p_content_alert">
+
+                                            <div class="p_content_alert_side">
 
                                                 <p class="title">Save Form</p>
                                                 Correctly saved

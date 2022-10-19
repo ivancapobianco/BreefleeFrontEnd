@@ -1,3 +1,4 @@
         function togglePopup(x){
-            document.getElementById(x).classList.toggle("active");
+            var x = document.getElementById(x)
+            x.classList.toggle("active");
         }
