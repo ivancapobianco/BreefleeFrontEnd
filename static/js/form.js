@@ -11,7 +11,7 @@ function form_saved(x) {
 
         setTimeout(function() {
             togglePopup('saved_alert');
-        }, 2000);
+        }, 3000);
         //alert("Correctly saved")
         });
     }

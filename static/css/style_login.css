@@ -156,6 +156,7 @@ img {
 .pssweye_icon {
     font-size: 1.2em;
     color:var(--grey_dark);
+    cursor: pointer;
 }
 
 

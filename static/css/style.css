@@ -100,6 +100,7 @@ body
 
 
 
+
 /*position and attributes of icon and title*/
 .navigation ul li a .icon
 {
@@ -184,6 +185,12 @@ body
 .navigation.active ul li.hovered a .title
 {
     color: var(--breeflee_peach_orange);
+    visibility: visible;
+}
+
+.navigation.active ul li.passive:hover a .title
+{
+    color: var(--grey_dark);
     visibility: visible;
 }
 
