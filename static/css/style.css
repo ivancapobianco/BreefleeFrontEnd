@@ -10,6 +10,9 @@
     font-family: 'Arial' , sans-serif;
 }
 
+
+
+
 body
 {
     min-height: 100vh;
@@ -858,6 +861,7 @@ img {
   top: 0;
   bottom: 0;
   left: 4px;
+  height: var(--height_documents_line, auto);
 }
 
 
@@ -1060,6 +1064,7 @@ fieldset {
     transition: var(--transition05s);
     justify-content: center;
     color: var(--grey_black);
+    height: 100vh;
 }
 
 
@@ -1069,6 +1074,8 @@ fieldset {
 {
     margin-left: var(--menu_opened);
     transition: var(--transition05s);
+    overflow: auto;
+
 }
 
 
@@ -1076,7 +1083,7 @@ fieldset {
   background-color: var(--white); /*rgba(255, 255, 255, 0.8);*/
   #border: 3px solid var(--grey_light);
   margin-top: var(--topbar_height);
-  height: calc(100vh - var(--topbar_height));
+
   padding: 20px 20px 20px 20px;
   #border-radius: 20px;
   #box-shadow: 0 3px 4px 0 rgba(0,0,0,0.13);
@@ -1144,13 +1151,29 @@ table {
   border-collapse: collapse;
   border-radius: 20px;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,0.13);
+  table-layout: fixed;
 }
 
 
 .thead {
     #border-radius: 20px;
     #cursor:pointer;
+    position: relative;
+
+
 }
+
+thead tr {
+    display: block;
+    position: relative;
+
+
+}
+
+
+
+
+
 
 th,
 td {
@@ -1159,6 +1182,9 @@ td {
   text-align: left;
   font-weight: 500;
   font-size: 16px;
+  min-width: 150px;
+
+
 }
 
 thead th {
@@ -1167,8 +1193,17 @@ thead th {
   width: auto;
   cursor:pointer;
 
-
 }
+
+tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 400px;
+}
+
+
+
 
 tbody tr{
     #cursor:pointer;
@@ -1178,6 +1213,7 @@ tr[data-href] {
     cursor:pointer;
 }
 
+
 tbody tr:nth-child(even) {
   background-color: var(--grey_light);
 }
@@ -1185,6 +1221,8 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
   background-color: var(--white);
 }
+
+
 
 
 /*sortable*/
