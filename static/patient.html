@@ -21,6 +21,7 @@
     <script defer src="/static/js/change_content_pat_level1.js"></script>
     <script defer src="/static/js/change_content_pat_level2.js"></script>
     <script defer src="/static/js/popup.js"></script>
+    <script defer src="/static/js/element_coordinates.js"></script>
 </head>
 
 
@@ -143,7 +144,7 @@
                     </div>
 
                 </div>
-                <hr/>
+
 
                 <!-- Button + document -->
                 <div class="add_button">
@@ -266,7 +267,7 @@
                     </div>
 
                 <!--list of documents-->
-                <div class="vtl">
+                <div class="vtl" id="documents_list">
 
                     <a class="centralColChange" href="#" data-id_central="2">
                         <div class="event">
@@ -298,12 +299,19 @@
                             <p class="txt">OP Vorbereitung </p>
                         </div>
                     </a>
-                    <a class="centralColChange" href="#" data-id_central="6">
+                    <a class="centralColChange" href="#" data-id_central="7">
                         <div class="event">
                             <p class="date">12 Jan 4235</p>
                             <p class="txt">OP Vorbereitung </p>
                         </div>
                     </a>
+                    <a class="centralColChange" href="#" data-id_central="8">
+                        <div class="event">
+                            <p class="date">12 Jan 5235</p>
+                            <p class="txt">OP Vorbereitung </p>
+                        </div>
+                    </a>
+
 
                 </div>
 
@@ -316,7 +324,7 @@
                 <!--Stammdaten-->
                 <div class="central">
 
-                    <div class="content">
+                    <div class="content" id="form_example">
 
                         <div class="">
                             <!--img src="diagramm.png"-->
@@ -624,6 +632,7 @@
                             <span class="tasks-list-mark"></span>
                             <span class="tasks-list-desc">And Go!</span>
                         </label>
+
                     </fieldset>
 
                 </section>

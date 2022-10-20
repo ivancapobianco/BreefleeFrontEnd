@@ -229,7 +229,7 @@ body
   top: var(--topbar_height);
   display: grid;
   grid-template-columns: var(--patient_first_col) auto var(--patient_todo_col);
-  height: calc(100% - var(--topbar_height));
+  height: calc(100vh - var(--topbar_height));
   grid-gap: 30px;
   background-color: var(--grey_light); /*#2196F3;*/
   padding: 10px;
@@ -532,11 +532,11 @@ img {
 }
 
 
-.content{
+.content {
     #overflow:scroll;
     padding: 30px 50px;
     overflow-y: auto;
-    height: calc(100vh - var(--topbar_height)*3);
+    #height: calc(100vh - var(--topbar_height)*3);
 }
 
 .showcontent {
@@ -838,7 +838,7 @@ img {
   /* (A3) OPTIONAL WIDTH RESTRICTION *
   max-width: 400px;*/
   overflow-y: scroll;
-  height: 170px;
+  #height: 200px;
 }
 
 .vtl a{
@@ -857,7 +857,7 @@ img {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 2px;
+  left: 4px;
 }
 
 
@@ -873,7 +873,7 @@ div.event::after {
   /* (F2) POSITION TO THE LEFT */
   position: absolute;
   top: 25%;
-  left: -22px;
+  left: -20px;
 }
 
 
@@ -916,6 +916,9 @@ div.event.active {
     color: var(--white);
 }
 
+div.event.active::before {
+     border-right-color: var(--breeflee_peach_orange);
+}
 
 
 /* (D) COSMETICS FOR EVENT DATE & TEXT */
@@ -930,6 +933,8 @@ p.txt {
   font-size: 0.9em;
   margin: 0px 0 0 0;
 }
+
+
 
 
 /* TO DO LIST */
