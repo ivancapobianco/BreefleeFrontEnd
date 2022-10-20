@@ -89,6 +89,12 @@
 }
 
 
+.input_box span ion-icon {
+    font-size: 1.2em;
+    color:var(--grey_dark);
+}
+
+
 
   form .option_div{
     margin-top: 5px;
@@ -144,7 +150,14 @@
 img {
   max-height: 100%;
   max-width: 100%;
+
 }
+
+.pssweye_icon {
+    font-size: 1.2em;
+    color:var(--grey_dark);
+}
+
 
 .logo img{
     padding: 20px;

@@ -23,18 +23,28 @@
 
       <!--username-->
         <div class="input_box">
-          <span><img src="icons/username.svg"></span>
+          <span>
+            <ion-icon name="person-outline"></ion-icon>
+            <!--<img src="icons/username.svg">-->
+          </span>
           <input  type="text" autocomplete="username" placeholder="username" id="userid" name="userid" required/>
         </div>
 
       <!--password-->
         <div class="input_box">
-          <span><img src="icons/password.svg"></span>
+          <span>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <!--<img src="icons/password.svg">-->
+          </span>
           <input type="password" placeholder="password" name="psswid" id="psswid" required/>
-
+          <span>
+            <ion-icon class="pssweye_icon" name="eye-outline" onclick="show_password()"></ion-icon>
+            <ion-icon class="pssweye_icon" name="eye-off-outline" onclick="show_password()" style="display:none"></ion-icon>
+            <input type="checkbox" style="display:none"/>
+          </span>
         </div>
 
-          <input type="checkbox" onclick="show_password()">Show Password
+
 
       <!--submit-->
         <div class="option_div"></div>
@@ -66,5 +76,10 @@
 
 
 
+
 </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </html>

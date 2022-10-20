@@ -1,4 +1,3 @@
-
 //finds the y coordinate of an element identified by CSS-class and
 //sets the height of the element to 100vh - y
 
@@ -19,8 +18,6 @@ function el_height_coordinates(x) {
 el_height_coordinates('.central.active .content')
 el_height_coordinates('.vtl')
 el_height_coordinates('.tasks-list')
-//el_height_coordinates('.hometable div')
-el_height_coordinates('.table_body')
 
 
 //similar to that before, it sets the height of a CSS-variable (thought for pseudo elements)

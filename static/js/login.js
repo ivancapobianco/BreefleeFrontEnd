@@ -69,9 +69,21 @@ window.addEventListener( "pageshow", function ( event ) {
 
 function show_password() {
   var x = document.getElementById("psswid");
+  var eyes = document.querySelectorAll('.pssweye_icon');
+
   if (x.type === "password") {
     x.type = "text";
   } else {
     x.type = "password";
   }
+
+  eyes.forEach(eye => {
+            if (eye.style.display == 'none') {
+             eye.style.removeProperty(`display`, `none`);
+            } else {
+             eye.style.setProperty(`display`, `none`);
+            }
+
+        })
+
 }
