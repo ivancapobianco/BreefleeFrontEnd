@@ -64,6 +64,7 @@ body
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    cursor: pointer;
 }
 
 
@@ -460,6 +461,7 @@ img {
     border-radius: 20px;
     border: 1px var(--grey_medium_dark) solid;
     display: block;
+    outline: none;
   }
 
   .button input:hover {
@@ -490,6 +492,7 @@ img {
     margin: auto;
     margin-bottom: 20px;
     padding: 5px 5px 5px 10px;
+    outline: none;
 
 
     border-radius: 50px;

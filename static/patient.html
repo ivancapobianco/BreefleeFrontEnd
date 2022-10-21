@@ -21,6 +21,7 @@
     <script defer src="/static/js/change_content_pat_level1.js"></script>
     <script defer src="/static/js/change_content_pat_level2.js"></script>
     <script defer src="/static/js/popup.js"></script>
+    <script defer src="/static/js/logout_alert.js"></script>
     <script defer src="/static/js/element_coordinates.js"></script>
 </head>
 
@@ -135,13 +136,13 @@
 
                                                 <p class="title">Log Out</p>
 
-                                                <label for="fName" class="formbreeflee-form-label"> Do you want to Log Out? </label>
+                                                <label for="fname" class="formbreeflee-form-label"> Do you want to Log Out? </label>
 
                                                 <div class="flex formbreeflee-half-line-padding">
 
                                                     <div>
                                                         <button type="button" class="formbreeflee-btn" id='save_btn_popup'>
-                                                        <a href="/pythonProject/static/login.html" style="text-decoration: none; color: inherit;">
+                                                        <a href="/pythonProject/static/login.html" style="text-decoration: none; color: inherit;" onclick="logout_alert()">
                                                             Log Out
                                                         </a>
                                                         </button>
