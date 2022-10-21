@@ -89,8 +89,8 @@
                     </a>
                  </li>
 -->
-                 <li>
-                    <a href="xy">
+                 <li onclick="togglePopup('logout')">
+                    <a >
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
                         <span class="title">Ausloggen</span>
                     </a>
@@ -107,6 +107,7 @@
               <ion-icon name="menu-outline"></ion-icon>
             </div>
 
+
             <!-- search -->
             <div class="search">
                 <label>
@@ -121,15 +122,58 @@
             <div class="user">
                 <span class="user_name">Dr. M. Mustermann</span>
               <span><img src="Bild.png"></span>
+                                <!--Popup Log Out-->
+                <span class="popup" id="logout">
+                                            <div class="overlay">
+                                            </div>
+
+                                            <div class="p_content_alert">
+
+                                                <div class="close-btn" onclick="togglePopup('logout')">&times;
+                                                </div>
+
+
+                                                <p class="title">Log Out</p>
+
+                                                <label for="fName" class="formbreeflee-form-label"> Do you want to Log Out? </label>
+
+                                                <div class="flex formbreeflee-half-line-padding">
+
+                                                    <div>
+                                                        <button type="button" class="formbreeflee-btn" id='save_btn_popup'>
+                                                        <a href="/pythonProject/static/login.html" style="text-decoration: none; color: inherit;">
+                                                            Log Out
+                                                        </a>
+                                                        </button>
+                                                    </div>
+
+
+                                                    <!--
+                                                    <div class="w-full sm:w-half formbreeflee-px-3">
+                                                        <button class="formbreeflee-btn" onclick="togglePopup('logout')">Cancel</button>
+                                                    </div>
+                                                    -->
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </span>
             </div>
         </div>
 
+        <!--Hometable inserted just because of JavaScript Script-->
         <div class="hometable" style="display:none"></div>
         <!--Main-->
         <div class="main">
 
             <!--Left column-->
             <div>
+
+
+                <!--patient-->
                 <div class="patient">
 
                     <p>Mustermann, Max <br> 51 J. (BMI XY)</p>
@@ -143,12 +187,21 @@
                             </a>
                     </div>
 
+                    <div class="input_box button">
+                            <a class="centralColChange" href="#" data-id_central="2">
+                                <input type="stammdaten" value="UEBERSICHT">
+                            </a>
+                    </div>
+
                 </div>
 
+                <hr>
 
                 <!-- Button + document -->
                 <div class="add_button">
-                    <button onclick="togglePopup('add_document')">+</button>
+                    <button onclick="togglePopup('add_document')">&nbsp;+&nbsp;
+                        <span>&nbsp;ADD NEW <br> &nbsp;DOCUMENT</span>
+                    </button>
                 </div>
 
                 <!-- popup add document -->
@@ -269,43 +322,43 @@
                 <!--list of documents-->
                 <div class="vtl" id="documents_list">
 
-                    <a class="centralColChange" href="#" data-id_central="2">
+                    <a class="centralColChange" href="#" data-id_central="3">
                         <div class="event">
                                 <p class="date">12 Mar 2237</p>
                                 <p class="txt">Nachsorge</p>
                         </div>
                     </a>
-                    <a class="centralColChange" href="#" data-id_central="3">
+                    <a class="centralColChange" href="#" data-id_central="4">
                         <div class="event">
                             <p class="date">10 Mar 2236</p>
                             <p class="txt">Nachsorge.</p>
                         </div>
                     </a>
-                    <a class="centralColChange" href="#" data-id_central="4">
+                    <a class="centralColChange" href="#" data-id_central="5">
                         <div class="event">
                             <p class="date">10 Feb 2235</p>
                             <p class="txt">OP</p>
                         </div>
                     </a>
-                    <a class="centralColChange" href="#" data-id_central="5">
+                    <a class="centralColChange" href="#" data-id_central="6">
                         <div class="event">
                             <p class="date">10 Jan 2235</p>
                             <p class="txt">OP Vorbereitung </p>
                         </div>
                     </a>
-                    <a class="centralColChange" href="#" data-id_central="6">
+                    <a class="centralColChange" href="#" data-id_central="7">
                         <div class="event">
                             <p class="date">10 Jan 3235</p>
                             <p class="txt">OP Vorbereitung </p>
                         </div>
                     </a>
-                    <a class="centralColChange" href="#" data-id_central="7">
+                    <a class="centralColChange" href="#" data-id_central="8">
                         <div class="event">
                             <p class="date">12 Jan 4235</p>
                             <p class="txt">OP Vorbereitung </p>
                         </div>
                     </a>
-                    <a class="centralColChange" href="#" data-id_central="8">
+                    <a class="centralColChange" href="#" data-id_central="9">
                         <div class="event">
                             <p class="date">12 Jan 5235</p>
                             <p class="txt">OP Vorbereitung </p>
@@ -314,6 +367,7 @@
 
 
                 </div>
+
 
             </div>
 
@@ -533,7 +587,7 @@
 
                                     <!--Submit button-->
                                     <div>
-                                        <button type="button" class="formbreeflee-btn" id='save_btn'>Submit</button>
+                                        <button type="button" class="formbreeflee-btn" id='save_btn'>Save</button>
                                     </div>
 
                                     <!-- Popup save -->
@@ -560,7 +614,7 @@
                                                     </div>
 
                                                     <div class="w-full sm:w-half formbreeflee-px-3">
-                                                        <button class="formbreeflee-btn" style="background-color: var(--breeflee_rosa);" onclick="togglePopup('save_form')">Don't save</button>
+                                                        <button class="formbreeflee-btn discard" onclick="togglePopup('save_form')">Don't save</button>
                                                     </div>
 
                                                     <!--
@@ -605,15 +659,23 @@
 
             <!--Right column-->
             <div>
-                <div class="toggle_todo_visible"><img src="icons/arrow right.png"></div>
-                <div class="todo_text">to do</div>
-                <div>
-                    to do
+                <div class="toggle_todo_visible">
+                    <!--<img src="icons/arrow right.png">-->
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
+                <div class="todo_text">&nbsp</div>
+
+                <div>
+
+                </div>
+
                 <section class="tasks">
 
                     <header class="tasks-header">
-                        <h2 class="tasks-title">Tasks</h2>
+                        <ion-icon name="chevron-forward-outline" class="toggle_todo_close"></ion-icon>
+                        <span class="tasks-title">
+                            Checklist
+                        </span>
                     </header>
 
                     <fieldset class="tasks-list">
@@ -657,11 +719,20 @@
         let toggle_todo_visible = document.querySelector('.toggle_todo_visible');
         let main_todo = document.querySelector('.main');
         let todo_text = document.querySelector('.todo_text');
+        let toggle_todo_close = document.querySelector('.toggle_todo_close');
 
         toggle_todo_visible.onclick = function(){
             main_todo.classList.toggle('active_todo');
             todo_text.classList.toggle('active_todo');
             toggle_todo_visible.classList.toggle('active_todo');
+            toggle_todo_close.classList.toggle('active_todo');
+        }
+
+        toggle_todo_close.onclick = function(){
+            main_todo.classList.toggle('active_todo');
+            todo_text.classList.toggle('active_todo');
+            toggle_todo_visible.classList.toggle('active_todo');
+            toggle_todo_close.classList.toggle('active_todo');
         }
 
 

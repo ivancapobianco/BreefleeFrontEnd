@@ -10,6 +10,9 @@
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style_form.css">
+    <link rel="stylesheet" href="css/style_popup.css">
+
 
     <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,6 +20,7 @@
     <script defer src="/static/js/table.js"></script>
     <script defer src="/static/js/date_selection.js"></script>
     <script defer src="/static/js/sidebar.js"></script>
+    <script defer src="/static/js/popup.js"></script>
 
 
 </head>
@@ -43,26 +47,26 @@
                  <!--Menu items-->
                  <li>
                     <a href="/pythonProject/static/index_table.html">
-                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></ion-icon></span>
                         <span class="title">Home</span>
                     </a>
                  </li>
 
 
                  <li>
-                    <a href="000" id="patient_menu">
+                    <a href="/pythonProject/static/patient.html">
                         <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                         <span class="title">Patient</span>
                     </a>
                  </li>
-                    <!--
+<!--
                  <li>
                     <a href="xy">
                         <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></ion-icon></span>
                         <span class="title">Form</span>
                     </a>
                  </li>
-                    -->
+-->
                  <li>
                     <a href="xy">
                         <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></ion-icon></span>
@@ -86,8 +90,8 @@
                     </a>
                  </li>
 -->
-                 <li>
-                    <a href="xy">
+                 <li onclick="togglePopup('logout')">
+                    <a >
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
                         <span class="title">Ausloggen</span>
                     </a>
@@ -104,6 +108,7 @@
               <ion-icon name="menu-outline"></ion-icon>
             </div>
 
+
             <!-- search -->
             <div class="search">
                 <label>
@@ -118,6 +123,45 @@
             <div class="user">
                 <span class="user_name">Dr. M. Mustermann</span>
               <span><img src="Bild.png"></span>
+                                <!--Popup Log Out-->
+                <span class="popup" id="logout">
+                                            <div class="overlay">
+                                            </div>
+
+                                            <div class="p_content_alert">
+
+                                                <div class="close-btn" onclick="togglePopup('logout')">&times;
+                                                </div>
+
+
+                                                <p class="title">Log Out</p>
+
+                                                <label for="fname" class="formbreeflee-form-label"> Do you want to Log Out? </label>
+
+                                                <div class="flex formbreeflee-half-line-padding">
+
+                                                    <div>
+                                                        <button type="button" class="formbreeflee-btn" id='save_btn_popup'>
+                                                        <a href="/pythonProject/static/login.html" style="text-decoration: none; color: inherit;">
+                                                            Log Out
+                                                        </a>
+                                                        </button>
+                                                    </div>
+
+
+                                                    <!--
+                                                    <div class="w-full sm:w-half formbreeflee-px-3">
+                                                        <button class="formbreeflee-btn" onclick="togglePopup('logout')">Cancel</button>
+                                                    </div>
+                                                    -->
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </span>
             </div>
         </div>
 

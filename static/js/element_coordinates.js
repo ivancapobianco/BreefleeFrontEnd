@@ -7,9 +7,8 @@ function el_height_coordinates(x) {
     var element = document.querySelector(x)
     var rect = element.getBoundingClientRect();
 
-    console.log(rect.top, rect.bottom, rect.y)
 
-    var height = 'calc(100vh - ' + rect.y.toString() + 'px - 10px)'
+    var height = 'calc(100vh - ' + rect.y.toString() + 'px - 20px)'
 
     element.style.setProperty(`height`, height);
 }
