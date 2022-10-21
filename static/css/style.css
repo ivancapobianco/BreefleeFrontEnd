@@ -837,6 +837,7 @@ img {
   max-width: 400px;*/
   overflow-y: scroll;
   #height: 200px;
+
 }
 
 .vtl a{
@@ -903,6 +904,7 @@ div.event {
   margin-bottom: 15px;
   cursor: pointer;
   color: var(--grey_black);
+
 }
 
 div.event:hover,
@@ -916,6 +918,7 @@ div.event.active {
     background-color: var(--breeflee_green);
     color: var(--white);
     #border: 2px var(--breeflee_green) solid;
+
 }
 
 div.event.active::before {
