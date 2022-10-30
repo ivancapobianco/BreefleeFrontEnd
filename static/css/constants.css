@@ -23,6 +23,19 @@
     --grey_light: #F0F0F0;
     --grey_ultra_light: #F8F9FA;
 
+    /*svg Palette*/
+    --filter_breeflee_peach_orange: invert(72%) sepia(28%) saturate(1038%) hue-rotate(328deg) brightness(101%) contrast(102%);
+    --filter_breeflee_yellow: invert(73%) sepia(14%) saturate(1786%) hue-rotate(354deg) brightness(102%) contrast(101%);
+    --filter_breeflee_rosa: invert(59%) sepia(61%) saturate(5743%) hue-rotate(326deg) brightness(122%) contrast(99%);
+    --filter_breeflee_blue_green: invert(45%) sepia(23%) saturate(1421%) hue-rotate(150deg) brightness(88%) contrast(89%);
+    --filter_breeflee_green: invert(76%) sepia(49%) saturate(276%) hue-rotate(109deg) brightness(86%) contrast(92%);
+
+    --filter_grey_black: invert(8%) sepia(3%) saturate(6978%) hue-rotate(177deg) brightness(96%) contrast(89%);
+    --filter_grey_dark: invert(29%) sepia(0%) saturate(4945%) hue-rotate(55deg) brightness(94%) contrast(87%);
+    --filter_grey_medium_dark: invert(77%) sepia(0%) saturate(57%) hue-rotate(81deg) brightness(98%) contrast(85%);
+    --filter_grey_medium_light: invert(82%) sepia(4%) saturate(7%) hue-rotate(346deg) brightness(105%) contrast(94%);
+    --filter_grey_light: invert(99%) sepia(0%) saturate(147%) hue-rotate(128deg) brightness(119%) contrast(88%);
+    --filter_grey_ultra_light: invert(100%) sepia(23%) saturate(617%) hue-rotate(177deg) brightness(101%) contrast(95%);
 
     /*measures and transition*/
     --transition05s: 0.5s;

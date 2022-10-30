@@ -130,7 +130,7 @@
   }
 
 
-  .submit_button input:hover{
+.submit_button input:hover{
     background: var(--breeflee_green);
   }
   
@@ -148,28 +148,32 @@
   }
 
 img {
-  max-height: 100%;
-  max-width: 100%;
+  #max-height: 100%;
+  #max-width: 100%;
 
 }
 
-.pssweye_icon {
-    font-size: 1.2em;
-    color:var(--grey_dark);
+.icon_login {
+    width: 150%;
+    filter: var(--filter_grey_dark);
+}
+
+.icon_pssweye {
+    width: 150%;
+    filter: var(--filter_grey_dark);
     cursor: pointer;
 }
 
 
 .logo img{
+    max-height: 100%;
+  max-width: 100%;
     padding: 20px;
   /*position:relative;
   top:00px;
   border:0px;*/
   }
 
-.span img{
-
-}
 
 .loginerror {
     display: none;

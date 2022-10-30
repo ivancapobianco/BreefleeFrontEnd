@@ -69,7 +69,7 @@ window.addEventListener( "pageshow", function ( event ) {
 
 function show_password() {
   var x = document.getElementById("psswid");
-  var eyes = document.querySelectorAll('.pssweye_icon');
+  var eyes = document.querySelectorAll('.icon_pssweye');
 
   if (x.type === "password") {
     x.type = "text";

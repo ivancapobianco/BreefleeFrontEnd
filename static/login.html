@@ -19,12 +19,12 @@
     </div>
 
     <div class="main_div">
-      <form action="/pythonProject/static/index_table.html" id="loginform">
+      <form action="" id="loginform">
 
       <!--username-->
         <div class="input_box">
           <span>
-            <ion-icon name="person-outline"></ion-icon>
+            <img class="icon_login" src="icons/person-outline.svg">
             <!--<img src="icons/username.svg">-->
           </span>
           <input  type="text" autocomplete="username" placeholder="username" id="userid" name="userid" required/>
@@ -33,14 +33,18 @@
       <!--password-->
         <div class="input_box">
           <span>
-            <ion-icon name="lock-closed-outline"></ion-icon>
-            <!--<img src="icons/password.svg">-->
+            <!--<ion-icon name="lock-closed-outline"></ion-icon>-->
+            <img class="icon_login" src="icons/password.svg">
           </span>
           <input type="password" placeholder="password" name="psswid" id="psswid" required/>
           <span>
-            <ion-icon class="pssweye_icon" name="eye-outline" onclick="show_password()"></ion-icon>
-            <ion-icon class="pssweye_icon" name="eye-off-outline" onclick="show_password()" style="display:none"></ion-icon>
+            <img class="icon_pssweye" name="eye-outline" src="icons/eye-outline.svg" onclick="show_password()"></img>
+            <img class="icon_pssweye" name="eye-off-outline" src="icons/eye-off-outline.svg" onclick="show_password()" style="display:none"></img>
             <input type="checkbox" style="display:none"/>
+            <!--
+            <ion-icon class="icon_pssweye" name="eye-outline" onclick="show_password()"></ion-icon>
+            <ion-icon class="icon_pssweye" name="eye-off-outline" onclick="show_password()" style="display:none"></ion-icon>
+            <input type="checkbox" style="display:none"/>-->
           </span>
         </div>
 
